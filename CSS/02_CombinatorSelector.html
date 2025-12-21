@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* decendent tag */
+      section div {
+        background-color: yellow;
+      }
+      /* child tag only target direct child */
+      section > div {
+        background-color: red;
+      }
+
+      /* general sibling ~ tilde symbol
+      iska mtlv closing taag k baad sare tag k color change hoga uske beeche me kuch ho ya na ho phir bhi change hoga */
+      section ~ div {
+        background-color: aqua;
+      }
+
+      /* adjacenet sibling mtlv uss tag k turant baaaaaad k ek tag uska adjacent hoga  but agar koi aur tag use krde and use koi aur kre to koi change nhi aiga */
+    section+div{
+        background-color: violet;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Learn combinator Selector</h1>
+
+    <section>
+      <div>div1</div>
+      <div>div2</div>
+      <article>
+        <div>div 3</div>
+        <div>div4</div>
+        <main><div>hello</div></main>
+      </article>
+      <div>div5</div>
+    </section>
+    <div>div7</div>
+    <div>div8</div>
+  </body>
+</html>

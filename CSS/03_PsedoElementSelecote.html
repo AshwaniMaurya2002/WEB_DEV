@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      P::first-line {
+        color: red;
+      }
+      P::first-letter {
+        color: green;
+        font-size: 50px;
+      }
+
+      h1::before {
+        content: "💖";
+        font-size: 50px;
+      }
+      h1::after {
+        content: "👍";
+        font-size: 50px;
+      }
+      p::selection {
+        background-color: red;
+        color: white;
+      }
+
+      /* Marker is used only for list */
+      li::marker {
+        color: blue;
+      }
+
+      h1::selection {
+        background-color: greenyellow;
+      }
+
+      li::first-letter {
+        color: green;
+        font-size: 30px;
+
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Learn Pesudo Element Selectors ::</h1>
+    <!--     
+     :: first-line
+     ::first-letter
+     ::after
+     ::before
+     ::selection
+     ::marker
+     
+     -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium id
+      similique cum facilis architecto mollitia quod doloribus nihil. Cumque
+      voluptas distinctio exercitationem, voluptates tempora itaque, nobis
+      accusantium error sequi sapiente, illo pariatur culpa fugit eos odio
+      repellat excepturi quisquam placeat libero veniam possimus? Accusantium
+      natus quisquam culpa enim quo reprehenderit iusto, qui perferendis!
+      Consectetur officia temporibus in, repellat impedit assumenda repellendus
+      aspernatur sunt mollitia magni nobis laudantium eligendi provident quo
+      odio repudiandae vero aut esse dolor laborum voluptates hic tenetur quasi?
+      Nemo animi molestias, commodi deserunt, amet, dolor neque optio porro
+      assumenda et necessitatibus quisquam dolores rem qui voluptates fugiat!
+    </p>
+
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.a{
+    background-color: red;
+    height:100px;
+    width: 300px;
+    
+
+
+}
+
+.b{
+    background-color: white;
+    height:100px;
+    width: 300px;
+    border-radius: 0  40px 0 0  ;
+}

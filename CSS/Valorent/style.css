@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 80px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    position: sticky;
+
+
+}
+
+.logo{
+    border: 2px solid white;
+    padding: 10px;
+}
+
+.video-container{
+    height: 80vh;
+    width: 100%;
+    /* background-color: yellow; */
+
+}
+
+.video-container > video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    
+}

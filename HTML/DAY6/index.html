@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center><h1>Form In HTML</h1></center>
+    <fieldset>
+      <legend>Fill the Form</legend>
+      <form action="">
+        <label for="Username">Username</label>
+        <input type="text" name="" id="Username" / placeholder="First Name">
+        <!-- Value tag  -->
+        <br />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="" id="email" placeholder="Enter Email" />
+        <br /><br />
+
+        <label for="">Password</label>
+        <input type="password" name="" id="" placeholder="Password" />
+        <br /><br />
+        <button type="submit">SUBMIT</button>
+        <br /><br />
+
+        <!-- sELECT TAG AND OPTIONS -->
+
+        <label for="">Country</label>
+        <select name="Country" id="">
+          <option value="select" disabled selected>---Select---</option>
+          <option value="INDIA" name="Country">INDIA</option>
+          <option value="GERMANY">GERMANY</option>
+          <option value="RUSSIA">RUSSIA</option>
+          <option value="uk">UK</option>
+          <option value="CHINA">CHINA</option>
+        </select>
+        <br /><br />
+        <label for="">Gender</label>
+        <br />
+
+        <!-- name is like a variable which store only one value so it select only one value -->
+
+        <label for="male">Male</label>
+        <input type="radio" name="Gender" id="male" value="Male" />
+        <label for="female">Female</label>
+        <input type="radio" name="Gender" id="female" value="female" />
+
+        <br /><br />
+
+        <label for="">Hobbies</label>
+        <br />
+        <label for="">Coding</label>
+        <input type="checkbox" name="hobbies" id="" value="hobbies" />
+        <label for="">Football</label>
+        <input type="checkbox" name="hobbies" id="" value="" />
+
+        <br /><br />
+        <label for="">Resume</label>
+        <!-- Multiple attribute used to select and upload multiple attribute -->
+        <input type="file" name="" id="" multiple />
+        <br /><br />
+        <label for="phone">Phone_Number</label>
+        <!-- maxlength and minlenght used to select no of  element enter in the tag -->
+        <input type="tel" name="phone" id="" maxlength="10" minlength="10" />
+        <br /><br />
+        <label for="date">DATE</label>
+        <input type="date" name="" id="" />
+        <br /><br />
+        <!-- min max gives a range option to choose the file -->
+        <label for="">Age</label>
+        <input type="number" name="Age" id="" min="0" max="100" />
+
+        <br /><br />
+        <label for="wekk">week</label>
+        <input type="week" name="week" id="" />
+        <br /><br />
+
+        <label for="">Range</label>
+        <input type="range" name="" id="" />
+        <br /><br />
+        <label for="login">button</label>
+        <input type="button" value="login" />
+        <label for="reset">reset</label>
+        <input type="reset" value="RestBTN" />
+        <input type="submit" value="SUBMIT" />
+      </form>
+    </fieldset>
+  </body>
+</html>

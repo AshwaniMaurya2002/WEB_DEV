@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: lightblue;
+    /* defines min height and if increSE it increase their size */
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px 80px;
+    padding: 50px;
+
+}
+
+
+.card{
+   height: 400px;
+    width: 300px;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.card-img{
+    height: 180px;
+    width: 100%;  
+    background-color: red;  
+    border-radius: 20px 20px 0 0;  
+    /* background image and theri property */
+    background-image: url(.././taj.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+}
+
+.details{
+    padding: 20px;
+}
+.details>h3{
+    padding: 10px 0;
+    font-family: sans-serif;
+
+}
+
+.details>p{
+    font-family: sans-serif;
+    color: grey;
+    font-size: 12px;
+
+}
+
+.category-btn{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    border: none;
+
+   
+}
+
+.user{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.user>img{
+    /* border: 1px solid black; */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user h4,p{
+    font-family: sans-serif;
+}
+
+.user h4{
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.user p{
+    font-size: 10px;
+    color: grey;
+    margin-top: 6px;
+}

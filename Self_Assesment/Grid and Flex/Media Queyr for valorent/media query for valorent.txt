@@ -1,0 +1,157 @@
+
+/* Media Query for resposive */
+
+
+img, video, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#check {
+    display: none;
+}
+
+/* for laptop 1024 */
+
+@media (max-width: 1024px) {
+
+    /* Nav Bar starts */
+    
+    .header {
+        padding: 0 20px;
+    }
+
+    /* Make .left take up the full width so we can use spacing */
+    .left {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    /* 1. Show the Hamburger Icon */
+    .hamburger {
+        display: block; 
+        font-size: 30px;
+        cursor: pointer;
+        color: white;
+        
+        /* THIS PUSHES IT TO THE RIGHTMOST SIDE */
+        margin-left: auto; 
+        
+        user-select: none;
+    }
+
+    /* 2. Style the Menu as a Drawer (Hidden by default) */
+    .menu {
+        position: fixed;
+        top: 80px; 
+        left: -100%; /* Hidden */
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: #111;
+        
+        /* Layout: Stack Vertically */
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 50px;
+        
+        transition: 0.4s ease;
+        z-index: 1000;
+        margin-left: 0;
+    }
+
+    /* 3. Logic: When #check is checked, slide .menu in */
+    #check:checked ~ .menu {
+        left: 0;
+    }
+
+    .menu li {
+        font-size: 24px;
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+        display: block; 
+    }
+
+    /* Hide the right-side icons (Search/Web) */
+    .right {
+        display: none;
+    }
+
+    /* --- OTHER LAYOUT FIXES (Same as before) --- */
+    
+    .grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+    .content img { width: 250px; }
+
+    .background, .bg-2, .learn-game {
+        flex-direction: column;
+        height: auto;
+        padding: 60px 0;
+    }
+
+    .back-img {
+        position: relative;
+        height: 300px;
+    }
+
+    .content1 {
+        position: relative;
+        right: auto;
+        width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #000;
+    }
+
+    .content1 h1, .background2 > h1, .learn-left h1 {
+        font-size: 40px;
+    }
+
+    .learn-left, .learn-right {
+        width: 100%;
+        padding: 0 20px;
+        text-align: center;
+    }
+    .learn-right { margin-top: 30px; }
+
+    .background-logo img { display: none; }
+
+    /* Footer Stacking */
+    .footer-top { width: 100%; }
+    
+    .footer-social ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        width: 100%;
+        padding: 20px;
+    }
+    .footer-bottom p {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .legal-links ul, .footer-img ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+

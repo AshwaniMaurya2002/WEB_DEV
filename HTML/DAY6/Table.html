@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <style>
+  table.mytable {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;    /* or any width you want: px or % */
+    /* Optional: to make cell borders/cell padding nicer */
+    border-collapse: collapse;
+  }
+  table.mytable, table.mytable th, table.mytable td {
+    border: 3px solid black;
+  }
+  table.mytable td, table.mytable th {
+    padding: 2px;  /* optional: adds spacing inside cells */
+  }
+</style> -->
+
+  </head>
+  <body>
+    <h1><center>Registration Form</center></h1>
+    <fieldset>
+      <legend><marquee behavior="" direction=""><mark>Fill the Form</mark></marquee></legend>
+
+      <form>
+        <table border="2" class="mytable">
+          <tr>
+            <td><label for="Username">Usernname</label></td>
+            <td><input type="text" name="" id="" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="Username">Email</label></td>
+            <td><input type="email" name="" id="" /></td>
+          </tr>
+          <tr>
+            <td><label for="Password">Password</label></td>
+            <td><input type="password" name="" id="" /></td>
+          </tr>
+
+           <tr>
+            <td>
+              <label for="">Age</label>
+            </td>
+            <td>
+        <!-- min max gives a range option to choose the file -->
+        <input type="number" name="Age" id="" min="0" max=">100" />
+            </td>
+          </tr>
+          <tr>
+
+            <tr>
+            <td >
+              <label for="phone">Phone_Number</label>
+            </td>
+            <td colspan="2">
+        <!-- maxlength and minlenght used to select no of  element enter in the tag -->
+        <input type="tel" name="phone" id="" maxlength="10" minlength="10" />
+
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="">Gender</label></td>
+            <td>
+              <input type="radio" name="Gender" id="male" /><label for="male"
+                >Male</label
+              >
+
+              <input type="radio" name="Gender" id="female" />
+              <label for="female">Female</label>
+            </td>
+          </tr>
+
+
+
+          
+
+          <tr>
+            <td>
+              <label for="date">DATE</label>
+            </td>
+            <td>
+        <input type="date" name="" id="" />
+            </td>
+          </tr>
+
+         
+            <td>
+              <label for="week">week</label>
+            </td>
+            <td>
+        <input type="week" name="week" id="" />
+            </td>
+          </tr>
+
+          <!-- <tr>
+            <td>
+              <label for="">Range</label>
+            </td>
+            <td>
+        <input type="range" name="" id="" />
+              
+            </td>
+          </tr> -->
+
+          
+
+         
+          <td >
+            
+            <label for="select">Country</label>
+            </td>
+            <th >
+            <select name="select" id="select">
+              <option value="select" disabled selected>---Select---</option>
+              <option value="INDIA" name="Country">INDIA</option>
+              <option value="GERMANY">GERMANY</option>
+              <option value="RUSSIA">RUSSIA</option>
+              <option value="uk">UK</option>
+              <option value="CHINA">CHINA</option>
+            </select>
+          </th>
+
+          <tr>
+            <td >
+              <label for="">Hobbies</label><br />
+              </td>
+              <td>
+              <input type="checkbox" name="hobbies" id="Coding" /><label
+                for="Coding">Coding</label
+              />
+              <input type="checkbox" name="hobbies" id="Football" /><label
+                for="Football">Football</label
+              />
+              <input type="checkbox" name="hobbies" id="Gaming">
+              <label for="Gaming">Gaming</label>
+              
+
+            </td>
+
+          </tr>
+          
+             <tr >
+            <td ><label for="Resume">Upload Resume:--</label>
+              </td>
+            <td>
+        <!-- Multiple attribute used to select and upload multiple attribute -->
+        <input type="file" name="" id="Resume" multiple /></td>
+          </tr>
+       
+ <tr>
+            <td colspan="2" style="text-align: center">
+              <input type="submit" value="Submit" />
+              <input type="reset" value="Reset" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <button type="submit">Submit Button</button>
+              <button type="reset">Reset Button</button>
+            </td>
+          </tr>
+
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>

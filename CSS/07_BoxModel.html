@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* It can help to make box size with the content size including padding so it does not become large andd take more space
+ */
+      * {
+        /* box-sizing: border-box; */
+      }
+      .box1 {
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+        border: 10px solid black;
+        padding: 10px;
+        /* padding properties
+        left
+        right
+        top 
+        bottom
+         */
+      }
+      .box2 {
+        height: 100px;
+        width: 100px;
+        background-color: violet;
+        border: 10px solid black;
+        padding: 10px;
+        box-sizing: border-box;000
+        /* by default it is set to content box */
+
+        /* FOR magin */
+        margin-top: 30px;
+        margin-left: 20px;
+
+        /* for padding */
+      }
+
+      .box3 {
+        text-align: center;
+        height: 100px;
+        width: 150px;
+        background-color: yellow;
+        border: 10px solid black;
+        padding: 10px;
+        /* padding properties
+        left
+        right
+        top 
+        bottom
+         */
+        transition: 1s;
+      }
+      button:hover + .box3 {
+        margin-left: 200px;
+        padding: 100px;
+        background-color: aqua;
+        border: 10px dotted;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Learn Box Model</h1>
+    <div class="box1">BOX1</div>
+    <div class="box2">BOX2</div>
+
+    <button>hovver me</button>
+    <div class="box3">BOX3</div>
+    <div class="box4"></div>
+
+  </body>
+</html>

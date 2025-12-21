@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: aqua;
+      }
+      a:visited {
+        color: brown;
+      }
+      a:active {
+        color: green;
+      }
+
+      /* First Write hover then active or else it override the active and active color not showing only the hover color showing */
+      button:hover {
+        background-color: aqua;
+      }
+
+      button:active {
+        background-color: green;
+        color: white;
+      }
+
+      li:first-child {
+        color: red;
+        background-color: yellow;
+      }
+      li:last-child {
+        background-color: aqua;
+        color: green;
+      }
+      li:nth-child(2) {
+        background-color: greenyellow;
+      }
+
+      /* main>div:first-child{} not work */
+
+      div:first-of-type{
+        background-color: red;
+      }
+      div:last-of-type{
+background-color: blueviolet;
+      }
+
+      /* this is a function in CSS paranthesis */
+      main>div:nth-of-type(2){
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Learn Pesudo class Selector</h1>
+    <!-- 
+    :link
+    :visited
+    :active
+    :hover
+    :first-child
+    :last-child
+    :nth-child()
+    :first-of-type
+    :last-of-type
+    :nth-of-type()
+    -->
+
+    <a href="./NewLink.html">NEW LINK PAGE</a>
+    <br /><br /><br />
+    <a href="./NewLink2.html">New LINK PAGE 2</a>
+    <br /><br />
+    <button>Submit</button>
+
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>React</li>
+      <li>TAILWIND CSS</li>
+    </ol>
+
+    <main>
+      <section>sec1</section>
+      <div>div1</div>
+      <section>sec2</section>
+      <div>div2</div>
+      <section>sec3</section>
+      <div>div3</div>
+      <section>sec 4</section>
+    </main>
+  </body>
+</html>

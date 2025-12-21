@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 300px;
+    width: 200px;
+    border: 3px solid black;
+    
+}
+
+.card-header {
+    height: 150px;
+    border: 2px solid blue;
+    width: 100%;
+    display: flex;
+    
+    background-color: lightgrey;
+    padding: 30px 10px 0;
+}
+
+.img1 {
+    height: 80%;
+    width: 100%;
+ background-color: red;
+ margin-right: 5px;
+ justify-content: space-evenly;
+border-radius: 50%;
+}
+
+
+
+.img2 {
+    height: 80%;
+    width: 100%;
+    background-color: yellow;
+    border-radius: 50%;
+}

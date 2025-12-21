@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-size: 100px; */
+      }
+
+      .box1 {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+      }
+      .box2 {
+        height: 50vh;
+        width: 60vw;
+        background-color: lightblue;
+      }
+      .childbox {
+        height: 50%;
+        width: 50%;
+        background-color: blue;
+      }
+      .box3 {
+        height: 1em;
+        width: 1em;
+        background-color: lightgreen;
+
+        font-size: 50px;
+      }
+      .box4 {
+        height: 1rem;
+        width: 1rem;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Units</h1>
+    <!-- absolute px
+     relative  % ,em rem,vh/vw 
+     1em=16px--(depend on current font size)
+
+     1rem=16px(root element pr dependend means html(root element))-- we have to change html size to increase the box
+     -->
+    <div class="box1">pixel Unit</div>
+    <div class="box2">
+      <div class="childbox"></div>
+    </div>
+
+    <!-- 1em=16px--(depend on current font size)  change font size to change the height of the box -->
+    <div class="box3"></div>
+
+    <!-- 1rem=16px(root element pr dependend means html(root element))-- we have to change html size to increase the box
+     -->
+    <div class="box4"></div>
+  </body>
+</html>

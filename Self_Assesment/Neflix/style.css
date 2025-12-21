@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+}
+
+body{
+    background-image: url(./Images/netflix-background-home.jpg);
+    background-size: cover;
+    backdrop-filter: blur(3px);
+    /* filter: blur(5px); */
+    
+}
+.nav{
+    /* border: 2px solid black; */
+    height: 80px;
+    width: 100vw;
+    background-color: transparent;
+    display: flex;
+    
+    
+}
+
+.netflix-logo{
+    height: 80px;
+    width: 150px;
+
+    /* border: 4px solid red; */
+    margin-left: 10%;
+    margin-right: 400px
+ 
+}
+
+.img1{
+    height: 50px;
+    width: 150px;
+    margin-top: 20px;
+}
+
+.nav-button{
+    display: flex;
+    margin: 20px;
+    gap: 10px;
+}
+
+.select-btn{
+    height: 30px;
+    width: 100px;
+    color: black;
+    font-size: 20px;
+    margin-left: 500px;
+}
+
+.search-btn{
+    background-color: red;
+    height: 30px;
+    padding: 5px 5px ;
+    font-size: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+  text-align: center;
+  color: white;
+}
+
+
+.h1{
+    font-size: 60px;
+    height: 140px;
+    width: 588px;
+    margin-bottom: 10px;
+}
+
+.h3{
+    font-size: 20px;
+    width: 588px;
+    margin-bottom: 10px;
+}
+
+.h5{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.email-btn{
+    background-color: transparent;
+    color: white;
+    height: 36px;
+    width: 288px;
+}
+
+.start-btn{
+    background-color: red;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Basic styling for email input */
+input[type="email"] {
+  width: 50%;               
+  padding: 10px 12px;    
+  margin: 8px 0 16px 0;       
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box;    
+  font-size: 16px;
+  font-family: sans-serif;
+  background-color: white;
+}
+
+input::placeholder {
+  color: black;   /* whatever color you like */
+  font-size: 18px;
+  opacity: 1;       /* ensures full opacity (useful for browsers like Firefox) */
+}

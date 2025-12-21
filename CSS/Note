@@ -1,0 +1,55 @@
+
+TYPes of selector
+
+1- simple
+        1-id(#)
+        2-class(.):-
+            we can give multiple class name to a single element
+        3-element(tag name)
+            select whole elemet like 
+            P{
+                background-color:red;
+
+            }
+
+        4-group(,)
+            // write multiple element in same using comma seperated
+            #heading,.head,nav{
+
+            }
+        5-universal(*)
+            Universal written in topmost in the style element
+            *{
+
+            }
+
+
+
+
+
+2-combinator
+        1-Desendent(symbol Eempty space)
+        used for changing all tags insdie a elemt
+        h1 p{
+
+        }
+        2-Child selector
+        h1 >P{
+
+        }
+        3-General Sibling
+        h1~p{
+
+        }
+        4-Adjacent Sibling
+        h1+p{
+
+        }
+
+3-pesudo class
+
+
+4-pesudo element
+
+
+5-attribute selector

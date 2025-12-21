@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .flexbox {
+        height: 500px;
+        width: 800px;
+        background-color: yellow;
+        display: flex;
+        /* row or column
+        row-reverse or column reverse
+        */
+        flex-direction: row;
+
+        justify-content: center;
+        /* justify content is 
+        for x asis
+        by default flex-start
+        flex-end 
+        space-evenly
+        space-around
+        space-bwtweeon
+        center
+        */
+
+        /* gap is used to give gap between all the boxses */
+        gap: 10px;
+        flex-wrap: wrap-reverse;
+        /* wrap and wrap reverse is used to make all the content 
+        with same box size
+        automamtically adujust with same size
+        by defatult it it no-wrap
+         */
+
+        align-items: center;
+        /* For the y axis */
+      }
+
+      .item {
+        height: 150px;
+        width: 150px;
+        border: 2px solid black;
+        background-color: orange;
+        font-size: 50px;
+        text-align: center;
+      }
+
+      .item:hover {
+        rotate: calc(49deg);
+        transition: 2s;
+      }
+
+      .flexbox2 {
+        height: 500px;
+        width: 800px;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .flexitem {
+        border: 2px solid black;
+        height: 150px;
+        width: 150px;
+        background-color: royalblue;
+        font-size: 50px;
+        color: white;
+        text-align: center;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Learn Flexbox</h1>
+    <br /><br />
+    <main class="flexbox">
+      <!-- IN cloum wise
+     align item work on y axis
+     justify contente work on x axis -->
+      <section class="item">1</section>
+      <section class="item">2</section>
+      <section class="item">3</section>
+      <section class="item">4</section>
+      <section class="item">5</section>
+      <section class="item">6</section>
+      <section class="item">7</section>
+      <section class="item">8</section>
+      <section class="item">9</section>
+    </main>
+    <br /><br /><br /><br />
+    <h1 style="text-align: center">Learn flexbox column wise</h1>
+    <!-- IN cloum wise
+     align item work on x axis
+     justify contente work on y axis -->
+
+    <main class="flexbox2">
+      <section class="flexitem">1</section>
+      <section class="flexitem">2</section>
+      <section class="flexitem">3</section>
+      <section class="flexitem">4</section>
+      <section class="flexitem">5</section>
+      <section class="flexitem">6</section>
+      <section class="flexitem">7</section>
+      <section class="flexitem">8</section>
+    </main>
+  </body>
+</html>

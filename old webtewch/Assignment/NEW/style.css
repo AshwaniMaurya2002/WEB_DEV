@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lightgray;
+    
+}
+
+.div1{
+    background-color: blue;
+    height: 90px;
+    width: 400px;
+    border: 2px solid black;
+    ;
+    
+}
+
+.div2{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    border-radius: 0 40px 0 0;
+    
+}
+
+.div2>h3{
+    text-align: center;
+    padding-top: 30px;
+    color: black;
+}

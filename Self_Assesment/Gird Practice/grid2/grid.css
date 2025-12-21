@@ -1,0 +1,44 @@
+body {
+  background: #2f2f2f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 150px;
+  gap: 10px;
+  width: 80vw;
+  background: #2f2f2f;
+}
+
+.item {
+  border: 6px solid #2f2f2f;
+}
+
+/* Color blocks */
+.red   { background: #ef4236; }
+.blue  { background: #31c8d7; }
+.tan   { background: #d3ae68; }
+.white { background: #fff; }
+
+/* Layout pattern */
+.red:first-child {
+  grid-row: span 2;
+}
+
+.tan:nth-of-type(3) {
+  grid-column: span 2;
+}
+
+.white:nth-of-type(4) {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.red:nth-of-type(6) {
+  grid-column: span 2;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- meta tag mandatory for media Query -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: 0.2s;
+      }
+      h1 {
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        background-color: aqua;
+      }
+
+      @media (min-width: 375px) {
+        h1 {
+          background-color: greenyellow;
+        }
+      }
+      @media (min-width: 425px) {
+        h1 {
+          background-color: antiquewhite;
+          font-size: 18px;
+        }
+      }
+      @media (min-width: 768px) {
+        h1 {
+          background-color: green;
+          font-size: 20px;
+        }
+      }
+      @media (min-width: 1028px) {
+        h1 {
+          background-color: grey;
+          font-size: 28px;
+        }
+      }
+
+      nav {
+        margin-top: 80px;
+        display: flex;
+        background-color: lightblue;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+      .nav-logo {
+        font-weight: 800;
+        font-size: 20px;
+      }
+
+      nav > ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
+      .hamburger {
+        font-weight: bold;
+        rotate: 90deg;
+      }
+
+      .navlinks {
+        display: none;
+      }
+
+      @media (min-width: 768px) {
+        .hamburger {
+          display: none;
+        }
+        .navlinks {
+          display: block;
+        }
+      }
+
+      .parent {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        transition: 0.2s;
+        padding: 30px;
+      }
+
+      .content {
+        height: 200px;
+        width: 100%;
+
+        background-color: red;
+        gap: 30px;
+        border: 3px solid black;
+        gap: 30px;
+      }
+
+      @media (min-width: 320px) {
+        .parent {
+          grid-template-columns: 1fr;
+          justify-items: center;
+          align-items: center;
+          gap: 30px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .parent {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: ;
+        }
+      }
+
+      @media (min-width: 1028px) {
+        .parent {
+          grid-template-columns: repeat(4, 1fr);
+
+          grid-template-rows: ;
+        }
+
+        .content {
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Media Query -Responsive Webpage</h1>
+
+    <nav>
+      <div class="logo">Responsive Nav bar</div>
+      <ul>
+        <li class="navlinks">HOME</li>
+        <li class="navlinks">ABOUT</li>
+        <li class="navlinks">PROJECT</li>
+        <li class="navlinks">CONTACT</li>
+        <li class="hamburger">|||</li>
+      </ul>
+    </nav>
+
+    <div class="parent">
+      <div class="content"></div>
+      <div class="content"></div>
+      <div class="content"></div>
+      <div class="content"></div>
+      <div class="content"></div>
+      <div class="content"></div>
+      <div class="content"></div>
+    </div>
+  </body>
+</html>
