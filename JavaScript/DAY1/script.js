@@ -69,54 +69,54 @@ Undefined bhi empty value  h jo automatically bnta hai agar hm kuch assign nhi k
 null bhi empty value h lekin ye hm khud assign krte hai jb hm chahte hai ki variable me koi value na ho
  */
 
-let sampleString = "Hello, World!";
- // String literal
- console.log(sampleString);
- console.log(typeof sampleString);
-let sampleNumber = 42; // Numeric literal
-console.log(sampleNumber);
-console.log(typeof sampleNumber);
+// let sampleString = "Hello, World!";
+//  // String literal
+//  console.log(sampleString);
+//  console.log(typeof sampleString);
+// let sampleNumber = 42; // Numeric literal
+// console.log(sampleNumber);
+// console.log(typeof sampleNumber);
 
-let sampleBoolean = true; // Boolean literal
-console.log(sampleBoolean);
-console.log(typeof sampleBoolean);
-let sampleArray = [1, 2, 3];
-console.log(sampleArray); // Array literal
-console.log(typeof sampleArray);
+// let sampleBoolean = true; // Boolean literal
+// console.log(sampleBoolean);
+// console.log(typeof sampleBoolean);
+// let sampleArray = [1, 2, 3];
+// console.log(sampleArray); // Array literal
+// console.log(typeof sampleArray);
 
-let sampleObject = { name: "John", age: 30 }; // Object literal
-console.log(sampleObject);
-console.log(typeof sampleObject);
-
-
-let undefinedVar; // Undefined
-console.log(undefinedVar);
-console.log(typeof undefinedVar);
-
-let nullVar = null; // Null
-console.log(nullVar);
-console.log(typeof nullVar);    
-
-let bigIntVar = 9007199254741991n; // BigInt literal
-console.log(bigIntVar);
-console.log(typeof bigIntVar);
-
-let symbolVar = Symbol("uniqueIdentifier"); // Symbol literal
-let anotherSymbolVar = Symbol("uniqueIdentifier");
-console.log(symbolVar);
-console.log(typeof symbolVar);
-console.log(symbolVar === anotherSymbolVar); // false, as symbols are unique
-console.log(symbolVar===symbolVar); // true
+// let sampleObject = { name: "John", age: 30 }; // Object literal
+// console.log(sampleObject);
+// console.log(typeof sampleObject);
 
 
+// let undefinedVar; // Undefined
+// console.log(undefinedVar);
+// console.log(typeof undefinedVar);
 
-//loose comparison
-// It checks only value, not data type
-console.log(5 == '5'); // true
+// let nullVar = null; // Null
+// console.log(nullVar);
+// console.log(typeof nullVar);    
 
-//strict comparison
-// It checks both value and data type
-console.log(5 === '5'); // false
+// let bigIntVar = 9007199254741991n; // BigInt literal
+// console.log(bigIntVar);
+// console.log(typeof bigIntVar);
+
+// let symbolVar = Symbol("uniqueIdentifier"); // Symbol literal
+// let anotherSymbolVar = Symbol("uniqueIdentifier");
+// console.log(symbolVar);
+// console.log(typeof symbolVar);
+// console.log(symbolVar === anotherSymbolVar); // false, as symbols are unique
+// console.log(symbolVar===symbolVar); // true
+
+
+
+// //loose comparison
+// // It checks only value, not data type
+// console.log(5 == '5'); // true
+
+// //strict comparison
+// // It checks both value and data type
+// console.log(5 === '5'); // false
 
 
 
@@ -127,7 +127,94 @@ console.log(5 === '5'); // false
 
 // !hosting in JavaScript
 
-console.log(a1); // Output: ReferenceError: a1 is not defined it can move the element to top so accesable to all but this is not initialized yet so it returns undefined                                    
+// console.log(a1); // Output: ReferenceError: a1 is not defined it can move the element to top so accesable to all but this is not initialized yet so it returns undefined                                    
 
-var a1 = 10; // Declaration and Initialization
-console.log(a1); // Output: 10
+// var a1 = 10; // Declaration and Initialization
+// console.log(a1); // Output: 10
+
+
+
+// !3 Ways of decelaing a variable
+
+/*
+
+1- let
+2-const
+3-var
+
+
+ */
+
+//Problem with Var
+
+// var a;//declare
+// console.log(a)//undefined
+
+
+// a=10;//initalize
+// console.log(a)//10
+
+// var a;// re declare is possible
+
+// a=20 //re Intialize
+
+// var b=30;//declare and intialize
+// console.log(b) //30
+
+// var b=40;
+// console.log(b) //40
+
+
+// // let 
+// let c;
+// console.log(c)//undefined
+
+// c=100;
+// console.log(c)
+
+// c=200;
+// console.log(c)//re intialize possible
+
+// let d=300;
+// console.log(d)
+
+// //let d=300 //!cannot re decalre and re intialize
+
+
+// //const
+
+// const e=1000 //cannot leave on declare mandatory to initialize and fixed cannot change also
+
+// e=2000; //cannot change after giving a value
+
+
+//undefined is default value but not defined is a error in program
+
+//! Temporal dead zone //cannot access here  ---> Time period btwn accessing a let/const variable before declaration
+
+// let x     hosted but the value is empty 
+//console.log(x) //cannot accesse before initaliztion  due to temporal dead zone
+
+// let x=10;
+// console.log(x)
+
+
+//!GEC - global execution context
+debugger;
+console.log("start");
+console.log(a);
+var x;
+console.log(x);
+let a1="hello";
+x=100;
+var a;
+console.log(b);
+a=x;
+var b=800;
+console.log(b);
+console.log("End");
+console.log(c);
+
+
+
+

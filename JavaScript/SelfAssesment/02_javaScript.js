@@ -1,16 +1,17 @@
 
-function recursiveFactorial(n) {
-    if (n < 0) {
-        throw new Error("Factorial is not defined for negative numbers");
-    }
-    if (n === 0 || n === 1) {
-        return 1;
-    }
-    return n * recursiveFactorial(n - 1);
-}
+//!GEC - global execution context
 
-let result = recursiveFactorial(5); // Output: 120
-console.log(result);
+console.log("start");
+console.log(a);
+var x;
+console.log(x);
+x=100;
+var a;
+console.log(b);
+a=x;
+var b=800;
+console.log(b);
+console.log("End");
+console.log(c);
 
-prompt("Enter The NO:");
 
