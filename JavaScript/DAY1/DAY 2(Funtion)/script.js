@@ -154,7 +154,7 @@
 
 //! 5)REST PARAMETERIZED FUNCION
 // function demo3(n1,n2,...rest){//REST IS REST ARRAY 
-//     console.log(n1,n2);//10 20
+//     console.log(n1,n2,rest);//10 20 [30,40,50]
 
 //     console.log(rest);//[30,40,50]<-- PURE ARRAY
 //     console.log(arguments);//[10,20,30,40,50,...]<--- ARRAY LIKE OBJECT (IMPURE)
@@ -167,21 +167,21 @@
 
 
 
-//! 6)RETURN-TYPE FUNCTION
+// //! 6)RETURN-TYPE FUNCTION
 
-function getFullName(fname="",lname=""){
-//string interpulation
-let fullName=`${fname} ${lname}`//string interpulation is used for concatinatoin so we can avoid + + symbol 
- return fullName;
-}
+// function getFullName(fname="",lname=""){
+// //string interpolation
+// let fullName=`${fname} ${lname}`//string interpolation is used for concatinatoin so we can avoid + + symbol 
+//  return fullName;
+// }
 
-function displayName(){
-    let value=getFullName();
-    document.writeln(`<h2><em>${value}</em></h2>`)
+// function displayName(){
+//     let value=getFullName();
+//     document.writeln(`<h2><em>${value}</em></h2>`)
 
-}
+// }
 
-displayName();
+// displayName();
 
 
 

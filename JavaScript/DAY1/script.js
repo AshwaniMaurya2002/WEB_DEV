@@ -125,7 +125,7 @@ null bhi empty value h lekin ye hm khud assign krte hai jb hm chahte hai ki vari
 
 
 
-// !hosting in JavaScript
+// !hoisting in JavaScript
 
 // console.log(a1); // Output: ReferenceError: a1 is not defined it can move the element to top so accesable to all but this is not initialized yet so it returns undefined                                    
 
