@@ -88,16 +88,16 @@
 
 // case  2  return a function
 
-function greet(message){
-    return function(name){
-        console.log(`${message} ${name}`);
+// function greet(message){
+//     return function(name){
+//         console.log(`${message} ${name}`);
         
-    };
+//     };
         
-}
+// }
 
-let val3=greet("Welcome");
-val3("John");
+// let val3=greet("Welcome");
+// val3("John");
 
 
 
