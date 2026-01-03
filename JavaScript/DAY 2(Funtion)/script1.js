@@ -17,13 +17,13 @@ const { Children } = require("react");
 
 // for(let i=0;i<5;i++){
 //     console.log(a1,b1,c1);
-    
+
 // }
 
 
 // function demo1(){
 //     console.log(a1,b1,c1);
-    
+
 // }
 // demo1();
 
@@ -51,7 +51,7 @@ const { Children } = require("react");
 // demo2();
 // console.log(a1,a2,a3);
 
- 
+
 //! in let constt phle se undefined nhi hota execution k time pr undefined hota h 
 //! but var me 1st time hi ho jata h aur usko skip kr deta h
 
@@ -68,7 +68,7 @@ const { Children } = require("react");
 
 // function greet(){
 //     console.log("Welcome");
-    
+
 // }
 // greet();
 
@@ -86,7 +86,7 @@ const { Children } = require("react");
 // //a1()    not a function  only named function is accessable before the funcftion
 // var a1=function(){
 //     console.log("WELCOME TO FUNCTION EXPRESSION");
-    
+
 // };
 
 
@@ -109,13 +109,13 @@ const { Children } = require("react");
 // var b=function(){
 //     console.log("welcome");
 
-    
+
 // }
 // console.log(b);
 // b();
 // function demo1(){
 //     console.log("demo 1");
-    
+
 // }
 // console.log(demo1);
 // console.log("end");
@@ -130,7 +130,7 @@ const { Children } = require("react");
 //         let ans=n1+n2+n3;
 //         console.log(ans);
 
-        
+
 //     }
 
 // sum(10,20,30);//gives 60
@@ -145,7 +145,7 @@ const { Children } = require("react");
 //         let ans=n1+n2+n3;
 //         console.log(ans);
 
-        
+
 //     }
 
 
@@ -160,9 +160,9 @@ const { Children } = require("react");
 
 //     console.log(rest);//[30,40,50]<-- PURE ARRAY
 //     console.log(arguments);//[10,20,30,40,50,...]<--- ARRAY LIKE OBJECT (IMPURE)
-    
-    
-    
+
+
+
 // }
 // demo3(10,20,30,40,50);
 
@@ -200,7 +200,7 @@ const { Children } = require("react");
 //     console.log("I am Parent");
 //     function child(){
 //         console.log("I am child");
-        
+
 //     }
 
 //     child();
@@ -209,19 +209,18 @@ const { Children } = require("react");
 // parent();
 
 
-
 //? Example 2
 
 
-function parent(){
+function parent() {
 
-     let money =80000;
- console.log(money);
- 
-    function child(){
-        let savings=1000;
+    let money = 80000;
+    console.log(money);
+
+    function child() {
+        let savings = 1000;
         console.log(savings);
-        
+
     }
 
     child();

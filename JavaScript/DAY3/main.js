@@ -18,9 +18,9 @@
 // parent();
 
 
+//? closure example and lexical scoping
 
-
-//Exaple 4 
+// Exaple 4 
 // debugger;
 // function parent(){
 
@@ -45,7 +45,7 @@
 
 //? lexical Scoping :- the ability of js engine to search the variable outside the current  scope
  
-//parent ki property ko child access krega to clouser naam ka area bnega aur usme sirf vhi value hoga jo child ko chiye aur tbtk rhega jbtk child ko mile na ya access kr rha ho
+//parent ki property ko child access krega to clouser naam ka memory area bnega aur usme sirf vhi value hoga jo child ko chiye aur tbtk rhega jbtk child ko mile na ya access kr rha ho
 
 //clouser and lexical scoping(ablility to search outside the scope)
 
