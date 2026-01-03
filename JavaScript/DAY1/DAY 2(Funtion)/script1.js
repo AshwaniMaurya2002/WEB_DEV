@@ -5,6 +5,8 @@
 // let b1=20;  //Script scope
 // const c1=30;//Script scope
 
+const { Children } = require("react");
+
 
 // if(10>2)
 // {
@@ -165,6 +167,10 @@
 // demo3(10,20,30,40,50);
 
 
+// Question  diff b/w rest and arguments?
+// Ans:- rest is pure array where we can use array methods but arguments is array like object where we cant use array methods directly
+
+
 
 
 // //! 6)RETURN-TYPE FUNCTION
@@ -188,3 +194,37 @@
 
 
 
+//! Nested Funtion
+// debugger;
+// function parent(){
+//     console.log("I am Parent");
+//     function child(){
+//         console.log("I am child");
+        
+//     }
+
+//     child();
+// }
+
+// parent();
+
+
+
+//? Example 2
+
+
+function parent(){
+
+     let money =80000;
+ console.log(money);
+ 
+    function child(){
+        let savings=1000;
+        console.log(savings);
+        
+    }
+
+    child();
+}
+
+parent();
