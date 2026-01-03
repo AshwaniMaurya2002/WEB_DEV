@@ -181,6 +181,7 @@ const { Children } = require("react");
 //  return fullName;
 // }
 
+
 // function displayName(){
 //     let value=getFullName();
 //     document.writeln(`<h2><em>${value}</em></h2>`)
@@ -227,3 +228,5 @@ function parent() {
 }
 
 parent();
+
+
