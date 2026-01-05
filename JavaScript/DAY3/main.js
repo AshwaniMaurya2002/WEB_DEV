@@ -101,3 +101,83 @@
 
 
 
+
+//! callback funtion
+// function callback(){
+//     console.log("welcome");
+// }
+
+// function greet(cb){
+// cb();
+// }
+// greet(callback);
+
+
+//!example
+
+// let arr1=[10,20,30]
+// arr1.forEach(function(element,index,arr)
+// {
+// console.log(element,index,arr);
+// })
+
+//this is used to print element index and arr we can remove argument it works like a for loop
+
+
+//!10) Most imp]]-- Arrow funtion:- Introduced in es6 , to declare function in shorteer syntax
+
+let a1=() =>{
+console.log("ARROW FUNCTION");
+}
+a1();
+
+
+//2nd way to use
+
+let a2= _=>{
+
+}
+a2();
+
+//way 3
+
+// if only we have one parameter
+let a3=x =>{
+    console.log(x);
+}
+
+a3();
+
+//way 4 multiple paramenter
+// paranthesis requied
+
+
+let a4=(x=10,y=432)=>{
+    console.log(x,y);
+
+}
+a4();
+
+
+//way 5
+
+let a5=() => console.log("Arrow funtion 5");
+a5();
+
+//way6 : explicit return :->return keyward {} are mandatory
+
+let a6=() =>{
+    return "arrow funtion 6"
+}
+console.log(a6());
+//way7  implicit:- return keyward {} are not madatory
+
+let a7=(n1,n2)=>n1+n2;
+console.log(a7(5,3));
+
+
+
+
+
+
+

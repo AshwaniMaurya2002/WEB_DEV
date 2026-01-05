@@ -50,31 +50,24 @@
 
 
 // //somehthing is importannt here i dont understand if 
-// return function hello(){
-//     count++;
-//     console.log("hello brother i am here how are you");
-//     console.log(count);
-// }
-// return count; // This line never executes
+debugger;
+function greet(){
 
-// function greet(){
+    let count=0;
+    return function hello(){
 
-//     let count=0;
-//     return function hello(){
-
-//         count++;
-//         console.log("hello brother i am here how are you");
-// console.log(count);
+        count++;
+        console.log("hello brother i am here how are you");
+console.log(count);
         
     
-//     }
-//    return count; 
+    }
+   return count; 
 
-// }
+}
 
 // let a=greet();
 // console.log(a);
-// a();
 // a();
 // a();
 // console.log(a);
@@ -82,4 +75,8 @@
 // let b=greet();
 // b();
 
+// a();
+// a();
+// b();
 
+console.log(a);
