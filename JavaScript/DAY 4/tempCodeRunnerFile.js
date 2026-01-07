@@ -1,0 +1,1 @@
+append element at the last of the array and return the new lenght of the array

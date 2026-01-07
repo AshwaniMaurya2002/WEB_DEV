@@ -60,6 +60,9 @@ console.log("The first elemet which is removed that is",firstE1);
 
 //? splice and slice
 
+//? interview question what is the use of slice and splice
+
+
 
 //! Splice   arr1.splice(startIndex,deleteCount,newElement)
 
@@ -110,9 +113,6 @@ let sortedArray2=arr4.sort((a,b)=>a-b);
 if number >0 ===> swap
 if number <0 ===> no swap
 if number =0 ===>no swap
-
-
-
 */
 
 console.log(sortedArray2); //sort in asendig order
@@ -129,4 +129,4 @@ console.log(arr5);
 let rev=arr5.reverse();
 
 console.log("after reversed",rev);
-console.log(arr5);  //reverse the same array and return it
+console.log(arr5);  //reverse the same/original array and return it
