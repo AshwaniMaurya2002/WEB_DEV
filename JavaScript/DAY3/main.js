@@ -1,5 +1,5 @@
 
-//Day 
+//Day 3
 
 // function parent(){
 
@@ -20,7 +20,7 @@
 
 //? closure example and lexical scoping
 
-// Exaple 4 
+// Example 4 
 // debugger;
 // function parent(){
 
