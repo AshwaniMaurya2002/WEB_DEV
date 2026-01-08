@@ -6,7 +6,7 @@
 
 //! array.forEach()  //return nothing 
 let arr=[10,20,30,40,50];
-
+//element and index aur array deta haii
 let val=arr.forEach((element,index,array)=>{
     console.log(element,index,array);  //first element store value 2nd index array store complete array
     return element+5;
@@ -16,7 +16,7 @@ console.log(val);
 
 
 //! array.map() //return new array with updated value
-
+//
 console.log("-----------------ARRAY MAP---------------");
 let arr1=[10,20,30,40,50]
 let val1=arr1.map((element,index,array)=>{
