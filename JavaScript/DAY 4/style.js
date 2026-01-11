@@ -1,19 +1,17 @@
 // //! Array
-// //hetrogeneous save different type of data in same array
-// // //! 1)array literals
-// // let arr1=[10];
-// // console.log(arr1);
-
-
-// // //! 2) Array Constructor
-// // let arr2=new Array(10);//if one value is passed then it works as the space not as a value
-// // let arr3=new Array(10,42);
-// // console.log(arr2);
-
+//hetrogeneous save different type of data in same array
+// //! 1)array literals
+// let arr1=[10];
+// console.log(arr1
+// //! 2) Array Constructor
+// let arr2=new Array(10);//if one value is passed then it works as the space not as a value
+// let arr3=new Array(10,42);
+// console.log(arr2);
+//
 // //! Array Method
 
 // let arr1=[10,20,30,40,50]
-// //array push
+//array push
 // console.log(arr1);
 
 // console.log("length of the arr1",arr1.length);
@@ -28,27 +26,23 @@
 // //array pop() : remove last element and return it
 
 // let lastE1=arr1.pop();
-
 // console.log(arr1);
 // console.log("the last element which is remove",lastE1);
-
 // //array unshift():  append element at the first index of the and return the new length;
 
 // let newLength1=arr1.unshift(100,200,300)
 // console.log(arr1);
 // console.log("New Lenght is: ",newLength1);
 
-// // //! Mutable(NON - Primitive) and ImMutable(Primitve)
-
-// // let str1="hello"
-// // // str[0]="x"  gives error bcz in js string is primitive
-// // console.log(str1);
-
-// // let arr=[10,20,30,40,50]
-// // console.log(arr);
-// // arr[0]="hii"
-
-// // console.log(arr);
+ // //! Mutable(NON - Primitive) and ImMutable(Primitve
+ 
+ // let str1="hello"
+ // // str[0]="x"  gives error bcz in js string is primitive
+ // console.log(str1)
+ // let arr=[10,20,30,40,50]
+ // console.log(arr);
+ // arr[0]="hii
+ // console.log(arr);
 
 
 // //! array.shift() :- remove first element from an array and return it
