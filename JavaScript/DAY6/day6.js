@@ -29,47 +29,43 @@
 // let x="city"
 
 // //?READ
-// //2 ways
-
-// // //! 1) using DOt operator
-// // console.log(student1.id);
-// // console.log(student1.x);
-// // //! 2 using square bracket
-// // console.log(student1["id"]);
-// // console.log(student1[x]);  //use let var and call the key  //access through variable
-
+ //2 way
+ // //! 1) using DOt operator
+ // console.log(student1.id);
+ // console.log(student1.x);
+ // //! 2 using square bracket
+ // console.log(student1["id"]);
+ // console.log(student1[x]);  //use let var and call the key  //access through variabl
 
 
-// //LOOPS
+ //LOOPS
 
-// //? for of  gives only the index of arr
-// // for(let i of arr){
-// // console.log(i);
-// // }
+ //? for of  gives only the index of arr
+ // for(let i of arr){
+ // console.log(i);
+ // }
 
-
-// // //?for in  gives only index of the variable
-// // only way to iterate objects 
-// // for(let i in arr)
-// // {
-// //     console.log(i);
-// // }
+ // //?for in  gives only index of the variable
+ // only way to iterate objects 
+ // for(let i in arr)
+ // {
+ //     console.log(i);
+ // }
 
 
 
-// // //!only way to iterate an OBJECT
-
-// // // for(let i in student1)
-// // // {
-// // //     console.log(student1[i]);  //here we cannot use dot operator otherwise we get undefined
-// // // }
-
-
-// // //! UPDATE
-// // //if key present update if not then it create new key inside the objcet
-// // student1.age=20
+ //!only way to iterate an OB
+ // for(let i in student1)
+ // {
+ //     console.log(student1[i]);  //here we cannot use dot operator otherwise we get undefined
+ // }
 
 
+ //! UPDATE
+ //if key present update if not then it create new key inside the objcet
+//  student1.age=20
+// 
+// 
 // // //! DELETE 
 
 // // delete student1.class;
@@ -158,7 +154,7 @@ greet.call(emp1,"noida","UP")
 
 
 getEmail.apply(emp2)
-
+// apply has only 2 argument one is obj 2nd is array which contains multiple object
 greet.apply(emp2,["noida","UP"])
 
 
@@ -168,7 +164,7 @@ greet.apply(emp2,["noida","UP"])
 let boundedGetEmail=getEmail.bind(emp3)
 boundedGetEmail();
 
-
+//bind does not directly call
 let boundedGreet=greet.bind(emp3)
 boundedGreet("Noida","UP")
 
