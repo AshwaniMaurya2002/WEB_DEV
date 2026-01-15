@@ -99,6 +99,47 @@ promise1.finally(()=>{
 
 
 
+//! API 
+
+//sbse phle server se fetch kia data store kia
+let promise=fetch("https://jsonplaceholder.typicode.com/comments")
+
+console.log(promise);
+
+//yha store hoga promise milega then tb chlega jb promise fullfilled ho aur response dega
+promise.then((response)=>{
+
+    //usss response ko ab ham json se js file me convert kr dege using the .json method
+ let promise2=response.json();
+ console.log(promise2);
+
+ //after converting using json methods it is stored in promise 2 which again gives a 2nd promise if gives us data 
+ //and if the promise fullfilled then block executed or else catch block runs
+    promise2.then((data)=>{
+        console.log(data);
+    })
+
+    //run when promise rejected
+promise.catch((error)=>{
+    console.log(error);
+})
+
+
+})
+
+//runs when promise is rejected
+promise.catch((error)=>{
+    console.log(err);
+    
+})
+
+
+//it runs always either the promise accepted or rejected
+promise.finally(()=>{
+    console.log("API completed");
+})
+
+
 
 
 

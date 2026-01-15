@@ -1,1 +1,5 @@
-let a=greet();
+
+promise.catch((error)=>{
+    console.log(error);
+})
+
