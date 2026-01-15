@@ -44,7 +44,7 @@ let {fname:firstName,company="NA",sal:salary=0}=employee1;
 console.log(firstName,company,salary);
 
 
-
+//* colon : k baaaaaaad bracket dege to destructuring hoga name dege to naam change ho jaiga
 //!   : colon k baad kuch bhi dena yani ki uss key k name change kr dena
 
 //nested Destructuring
