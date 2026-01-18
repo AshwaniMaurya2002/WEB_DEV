@@ -27,10 +27,8 @@
 
 //     allTodos.forEach((todo)=>{
 //         let {id,userId,title}=todo;
-//     })
 
-
-//     document.writeln(
+ document.writeln(
 //        `
 //         <div>
 //             <h3>
@@ -50,10 +48,50 @@
 
 //         `
 //     );
+//     })
+
+
+//    
 
 
 
 // }
+
+
+//!correct code for the get fetch api
+
+
+
+function displayTodos(alltodo) {
+  alltodo.forEach(element => {
+
+  let{title:tit}=element;
+  
+  document.writeln(`<div><h3>TODO:${tit}</h3></div>`)
+
+
+});
+  console.log(alltodo);
+}
+
+async function sayMyName() {
+  try {
+    let response = await fetch("https://jsonplaceholder.typicode.com/todos");
+    let data = await response.json();
+    displayTodos(data);
+  } catch(err) {
+    console.log(err);
+  }
+}
+
+sayMyName();
+ 
+
+
+
+
+
+
 
 
 
