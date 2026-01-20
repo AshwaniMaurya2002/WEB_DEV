@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button onclick="singleclick()">click</button>
+    <button ondblclick="doubleclick()">Double click</button>
+    <button onmouseenter="cursorEnter()">event On MouseEnter</button> 
+    <button onmouseleave="onmouseLeave()">cursor Out of the event</button>
+    <button onmousemove="cursorMove()">On Move event</button>
+
+    <input type="text" onkeydown="onkeypresss()">
+    <input type="text" onkeyup="onkeyupp()">
+    <input type="text" onfocus="focusChange()">
+
+
+
+
+<!-- on submit is the form event used only in form -->
+ <!-- onclick is used anywhere -->
+    <fieldset>
+        <legend>
+            fill the form 
+        </legend>
+
+        <form onsubmit="formHandle(event)">
+
+            <input type="text" name="" id="">
+            <br>
+            <input type="text" name="" id="">
+            <br>
+            <button>Submit</button>
+
+        </form>
+    </fieldset>
+
+
+
+    <script src="./events.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
