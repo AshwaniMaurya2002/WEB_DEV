@@ -2,31 +2,31 @@
 
 // //!  Async and Await
 
-// //works with only async function
-// async function getTodo(){
-//     try{
-//         let response=await fetch("https://jsonplaceholder.typicode.com/todos")//directly store response bcz used await
-//         //if we dont use await it store the promise but if you use await it store directly the response and data
-//         let data= await response.json();//store data directly inside the data without giving promise bcz used await
-//         displayTodos(data);
+//works with only async function
+async function getTodo(){
+    try{
+        let response=await fetch("https://jsonplaceholder.typicode.com/todos")//directly store response bcz used await
+        //if we dont use await it store the promise but if you use await it store directly the response and data
+        let data= await response.json();//store data directly inside the data without giving promise bcz used await
+        displayTodos(data);
 
 
-//     }
+    }
 
-//     catch(err){
-//         console.log("API calling error" ,err);
-//     }
-// }
-
-
-// getTodo();
+    catch(err){
+        console.log("API calling error" ,err);
+    }
+}
 
 
-// function displayTodos(allTodos){
-//     console.log(allTodos);
+getTodo();
 
-//     allTodos.forEach((todo)=>{
-//         let {id,userId,title}=todo;
+
+function displayTodos(allTodos){
+    console.log(allTodos);
+
+    allTodos.forEach((todo)=>{
+        let {id,userId,title}=todo;
 
  document.writeln(
 //        `
@@ -73,6 +73,8 @@ function displayTodos(alltodo) {
 });
   console.log(alltodo);
 }
+
+//!how to do this
 
 async function sayMyName() {
   try {

@@ -192,6 +192,32 @@
 
 
 
+// let a2=x=>{
+//     console.log(x);
+// }
+
+// a2(40);
+
+
+
+
+// async function greet(){
+// let response= await fetch("https://jsonplaceholder.typicode.com/users")
+// let data=await response.json();
+
+// data.then()
+// console.log(data);
+// }
+
+// greet();
+
+
+
+let arr=[10,20,34,64,35,33,56]
+
+//rest
+
+console.log(...arr);
 
 
 
@@ -199,3 +225,20 @@
 
 
 
+
+// let [,x,[,[,y],z],a]=arr
+// console.log(a,x,y,z);
+
+
+
+// arr.forEach((element)=>{
+//     console.log(element);
+// })
+
+
+
+// let arr1=arr.reduce((acc,start)=>{
+//         return acc+start;
+// },50)
+
+// console.log(arr1);
