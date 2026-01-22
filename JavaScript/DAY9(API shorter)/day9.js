@@ -76,12 +76,13 @@ function displayTodos(alltodo) {
 
 //!how to do this
 
-async function sayMyName() {
+async function sayMyName(){
   try {
     let response = await fetch("https://jsonplaceholder.typicode.com/todos");
     let data = await response.json();
     displayTodos(data);
-  } catch(err) {
+  } 
+  catch(err) {
     console.log(err);
   }
 }
