@@ -2,6 +2,7 @@
 
 
 const signupaFormEL=document.getElementById("singup-form")
+const userContainer=document.getElementById("user-container")
 
 signupaFormEL.addEventListener("submit",(e)=>{
 
@@ -32,7 +33,7 @@ signupaFormEL.addEventListener("submit",(e)=>{
 
     //! set user array in local
 
-    localStorage.setItem("user",JSON.stringify(allSingupUSer))
+    localStorage.setItem("user",JSON.stringify(allSingupUSer));
 
     //! clear input fields;
 
@@ -56,12 +57,15 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 //display parseIntial user  which  are stored in local storage
 function displaySingupUser(){
+    userContainer.textContent="";
+
     let alluser=JSON.parse(localStorage.getItem("user") ) ||[];
 
     if(alluser.length===0){
         const pTag=document.createElement("p")
         pTag.textContent="NO user available"
-        document.body.append(pTag)
+        // document.body.append(pTag)
+        userContainer.append(pTag)
     }
     else{
         alluser.map((ele)=>{
@@ -72,8 +76,15 @@ function displaySingupUser(){
 
             `
 
-            document.body.append(divTag)
+            // document.body.append(divTag)
+            userContainer.append(divTag)
         })
     }
 }
+
+
+// document.getElementById("clear-data").addEventListener("click",()=>{
+//     localStorage.removeItem("user");
+//     location.reload();
+// })
 
