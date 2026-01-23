@@ -8,15 +8,13 @@ signupaFormEL.addEventListener("submit",(e)=>{
     e.preventDefault();
 
     const usernameEL=document.querySelector("#username")
-        const emailEL=document.querySelector("#email")
+    const emailEL=document.querySelector("#email")
     const passwordEL=document.querySelector("#password")
 
     let newUser={
         username:usernameEL.value.trim(),
         email: emailEL.value.trim(),
         password:passwordEL.value.trim(),
-
-
     }
 
     console.log(newUser);
@@ -43,10 +41,12 @@ signupaFormEL.addEventListener("submit",(e)=>{
     passwordEL.value=""
 
 
+   
     
 })
 
 
+//! this is used to display user on UI after page load
 window.addEventListener("DOMContentLoaded",()=>{
     displaySingupUser();
 })
@@ -54,7 +54,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 
 
-//display useron Ui
+//display parseIntial user  which  are stored in local storage
 function displaySingupUser(){
     let alluser=JSON.parse(localStorage.getItem("user") ) ||[];
 
@@ -76,3 +76,4 @@ function displaySingupUser(){
         })
     }
 }
+

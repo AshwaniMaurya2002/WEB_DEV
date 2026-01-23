@@ -213,11 +213,11 @@
 
 
 
-let arr=[10,20,34,64,35,33,56]
+// let arr=[10,20,34,64,35,33,56]
 
-//rest
+// //rest
 
-console.log(...arr);
+// console.log(...arr);
 
 
 
@@ -242,3 +242,6 @@ console.log(...arr);
 // },50)
 
 // console.log(arr1);
+
+
+console.log(43325);
