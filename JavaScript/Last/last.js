@@ -17,7 +17,6 @@ const div=document.querySelector("div")
 //! interview Questions
 
 //? stopPropogation():==> prevents further propagation of the current event in the capturing and bubbling phases
-
 //? stopImmediatePropagation():  stops event to propagate either in bubbling or captuirng phase and it also prevents several listners that
 //?are  attached tp the same element for same event type to get called
 
