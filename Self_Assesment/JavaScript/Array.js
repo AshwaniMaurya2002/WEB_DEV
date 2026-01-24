@@ -5,4 +5,3 @@ let ans=arr.map((e,idx,arr)=>{
 })
 
 console.log(ans);
-
