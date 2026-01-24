@@ -1,7 +1,6 @@
-const arr=[11,2,3,4];
 
-let ans=arr.map((e,idx,arr)=>{
-    return e+20,idx+1,arr
-})
 
+const arr=[12,3,4,5,63,42]
+
+let ans=arr.findIndex((ele)=>ele>20)
 console.log(ans);
