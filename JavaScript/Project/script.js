@@ -1,17 +1,36 @@
 const productContainer=document.querySelector(".products-container");
+const themeBtn=document.querySelector("#themeBtn")
+
+if(localStorage.getItem("theme")==="dark"){
+    document.body.classList.add="dark"
+}
+
+
+
+themeBtn.addEventListener('click',()=>{
+    document.body.classList.toggle("dark")
+
+    //save theme
+    const theme=document.body.classList.contains("dark") ? "dark" : "light";
+
+    localStorage.setItem("theme",theme);
+
+
+})
+
 
 
 async function fetchAllProduct() {
 try{
         let resp=await fetch("https://dummyjson.com/products")
     let data=await resp.json();
-    // console.log(data);
+    console.log(data);
 
     displayProducts(data.products);
 
 }
 
-catch(error){
+    catch(error){
     console.log(error);
     displayProducts([]);
 }
@@ -52,6 +71,9 @@ function displayProducts(allProducts){
         <p> Rs.${price}</p>
 
         <p title='${description} ' >${description.slice(0,50)}...</p>
+
+        <button>Add to cart</button>
+
         
         `
 
@@ -59,10 +81,7 @@ function displayProducts(allProducts){
 
 
     })
-
-
     productContainer.append(productWrapper);
-
 
     }
 }
