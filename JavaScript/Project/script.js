@@ -2,7 +2,7 @@ const productContainer=document.querySelector(".products-container");
 const themeBtn=document.querySelector("#themeBtn")
 
 if(localStorage.getItem("theme")==="dark"){
-    document.body.classList.add="dark"
+    document.body.classList.add("dark")
 }
 
 
@@ -12,10 +12,7 @@ themeBtn.addEventListener('click',()=>{
 
     //save theme
     const theme=document.body.classList.contains("dark") ? "dark" : "light";
-
-    localStorage.setItem("theme",theme);
-
-
+    localStorage.setItem('theme',theme);
 })
 
 
