@@ -1,24 +1,3 @@
 
 
-
-// let obj={
-//     id:1,
-//     name:"rohan",
-//     pin:2452,
-//     address:{
-//         road:1,
-//         area:31,
-//         street:63
-//     }
-
-// }
-
-
-
-
-
-
-setInterval((e)=>{
-    console.log("time inteval");
-
-},1000)
+let arr=[1,2,3,4,5,6,7,8]
