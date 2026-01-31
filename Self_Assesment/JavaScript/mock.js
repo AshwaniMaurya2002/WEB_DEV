@@ -16,10 +16,9 @@
 
 
 
-setTimeout((e) => {
-
-    console.log("gsgs");
-    
-}, 2000);
 
 
+setInterval((e)=>{
+    console.log("time inteval");
+
+},1000)
