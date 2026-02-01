@@ -3,15 +3,15 @@
 // //! OBJECT
 
 // //?Object literal
-// //    {a:b}  a is key b is value together we called it property
-// // let obj={id:1,name:"Mohit",isLoggedIN:true};
-// // obj.company="HCL"//add int the object
-// // console.log(obj);
+//    {a:b}  a is key b is value together we called it property
+// let obj={id:1,name:"Mohit",isLoggedIN:true};
+// obj.company="HCL"//add int the object
+// console.log(obj);
 
-// // //?Object Constructor
-// // let obj2=new Object({id: 2,name:"rohan"})
-// // obj2.company="TCS"  //used to add in the object
-// // console.log(obj2);
+// //?Object Constructor
+// let obj2=new Object({id: 2,name:"rohan"})
+// obj2.company="TCS"  //used to add in the object
+// console.log(obj2);
 
 
 
@@ -36,7 +36,6 @@
  // //! 2 using square bracket
  // console.log(student1["id"]);
  // console.log(student1[x]);  //use let var and call the key  //access through variabl
-
 
  //LOOPS
 
@@ -66,11 +65,11 @@
 //  student1.age=20
 // 
 // 
-// // //! DELETE 
+// //! DELETE 
 
-// // delete student1.class;
+// delete student1.class;
 
-// // console.log(student1);
+// console.log(student1);
 
 
 

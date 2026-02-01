@@ -63,7 +63,7 @@ console.log("the sum is=",sum);
 
 let val6=arr1.reduce((acc,element,index,array)=>{
     console.log(acc,element);
-
+    return acc+element;
 },0);
 
 console.log("the sum is-->",val6);

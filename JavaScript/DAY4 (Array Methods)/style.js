@@ -17,7 +17,7 @@
 // console.log("length of the arr1",arr1.length);
 
 
-// //array.push method : append element at the last of the array and return the new lenght of the array
+ //array.push method : append element at the last of the array and return the new lenght of the array
 
 // let newLength=arr1.push(60,70,80)
 // console.log(arr1);
@@ -97,7 +97,7 @@
 
 // let arr4=[10,2,60,3,57,8]
 
-// //lexographical sorting- no get converted into srting and the sort according to character only first char then next char is checked
+ //lexographical sorting- no get converted into srting and the sort according to character only first char then next char is checked
 // let sortedArray1=arr4.sort();
 
 // console.log(sortedArray1);

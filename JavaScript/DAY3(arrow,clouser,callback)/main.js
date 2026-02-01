@@ -1,52 +1,52 @@
 
 // //Day 3
 
-// // function parent(){
+// function parent(){
 
-// //      let money =80000;
-// //  console.log(money);
+//      let money =80000;
+//  console.log(money);
  
-// //     function child(){
-// //         let savings=1000;
-// //         console.log(savings+money);
-// //     }
+//     function child(){
+//         let savings=1000;
+//         console.log(savings+money);
+//     }
 
-// //     child();
-// // }
+//     child();
+// }
 
-// // parent();
+// parent();
 
 
 // //? closure example and lexical scoping
 
-// // Example 4 
-// // debugger;
-// // function parent(){
+// Example 4 
+// debugger;
+// function parent(){
 
-// //      let money =80000;
-// //  console.log(money);
+//      let money =80000;
+//  console.log(money);
  
-// //     function child(){
-// //         let savings=1000;
-// //         console.log(savings+money);//! money is accessed due to the clouser property
+//     function child(){
+//         let savings=1000;
+//         console.log(savings+money);//! money is accessed due to the clouser property
         
-// //     }
+//     }
 
-// //     return child();
-// // }
+//     return child();
+// }
 
-// // let val=parent();
-// // console.log(val);
-// // val();
+// let val=parent();
+// console.log(val);
+// val();
 
 
 // //? clouser:- its a memory which is created whenever we try to access parent func property inside the child func
 
 // //? lexical Scoping :- the ability of js engine to search the variable outside the current  scope
  
-// //parent ki property ko child access krega to clouser naam ka memory area bnega aur usme sirf vhi value hoga jo child ko chiye aur tbtk rhega jbtk child ko mile na ya access kr rha ho
+//parent ki property ko child access krega to clouser naam ka memory area bnega aur usme sirf vhi value hoga jo child ko chiye aur tbtk rhega jbtk child ko mile na ya access kr rha ho
 
-// //clouser and lexical scoping(ablility to search outside the scope)
+//clouser and lexical scoping(ablility to search outside the scope)
 
 
 // //! higher order func:- a func which can perform atleast one of these task
@@ -57,35 +57,35 @@
 
 
 // //?  calculate is Higher order function
-// // debugger;
+// debugger;
 
-// // function calculate(a,b,operation){
-// //     return operation(a,b);
-// // }
-
-
-// // function add(n1,n2){
-// //     return n1+n2;
-// // }
-
-// // function subtract(n1,n2){
-// //     return n1-n2;
-// // }
-
-// // //call for add
-// // let val=calculate(10,20,add)
-// // console.log(val)
-
-// // //call for subtract
-// // let val1=calculate(101,20,subtract)
-// // console.log(val1)
-
-// //execution start from function call calculate 
+// function calculate(a,b,operation){
+//     return operation(a,b);
+// }
 
 
+// function add(n1,n2){
+//     return n1+n2;
+// }
+
+// function subtract(n1,n2){
+//     return n1-n2;
+// }
+
+// //call for add
+// let val=calculate(10,20,add)
+// console.log(val)
+
+// //call for subtract
+// let val1=calculate(101,20,subtract)
+// console.log(val1)
+
+//execution start from function call calculate 
 
 
-// // case  2  return a function
+
+
+// case  2  return a function
 
 function greet(message){
     return function(name){
@@ -102,25 +102,25 @@ val3("John");
 
 
 // //! callback funtion
-// // function callback(){
-// //     console.log("welcome");
-// // }
+// function callback(){
+//     console.log("welcome");
+// }
 
-// // function greet(cb){
-// // cb();
-// // }
-// // greet(callback);
+// function greet(cb){
+// cb();
+// }
+// greet(callback);
 
 
 // //!example
 
-// // let arr1=[10,20,30]
-// // arr1.forEach(function(element,index,arr)
-// // {
-// // console.log(element,index,arr);
-// // })
+// let arr1=[10,20,30]
+// arr1.forEach(function(element,index,arr)
+// {
+// console.log(element,index,arr);
+// })
 
-// //this is used to print element index and arr we can remove argument it works like a for loop
+//this is used to print element index and arr we can remove argument it works like a for loop
 
 
 // //!10) Most imp]]-- Arrow funtion:- Introduced in es6 , to declare function in shorteer syntax
