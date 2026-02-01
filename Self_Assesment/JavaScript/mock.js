@@ -30,10 +30,4 @@ function displayOnUI(alldata){
 
     });
 }
-
-
-
-
-
-
 greet();
