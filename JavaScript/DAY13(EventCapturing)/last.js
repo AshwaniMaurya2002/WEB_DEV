@@ -35,6 +35,8 @@ article.addEventListener('click',(e)=>{
 
 div.addEventListener('click',(e)=>{
     e.stopImmediatePropagation();
+    //stop immediate will stop the bubbling or capturing phase and also stop the other addeventListner that are used in the same element
+    
     div.style.backgroundColor="orange"
     console.log("div");
 },0)
