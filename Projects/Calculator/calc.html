@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calc.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >Calculator Made By Ashwani </h1>
+    
+
+  <div class="main-body">
+      <section class="calc-body">
+        <div class="calc-display"> 
+            <input type="text" name="input" id="input">
+        </div>
+
+        <div class="calc-buttons">
+            <button class="btn" id="clear" onclick=input.value="">C</button>
+            <button class="btn" id="backspace" onclick=input.value=input.value.slice(0,-1)>D</button>
+            <button class="btn" id="divide" value="/" onclick=input.value+="/">/</button>
+            <button class="btn" id="multiply" value="*" onclick=input.value+="*">X</button>
+
+           
+
+
+        </div>
+
+        <div class="calc-buttons">
+             <button class="btn" id="7" value="7" onclick=input.value+="7">7</button>
+            <button class="btn" id="8" value="8" onclick=input.value+="8">8</button>
+            <button class="btn" id="9" value="9" onclick=input.value+="9">9</button>
+            <button class="btn" id="subtract" value="-" onclick=input.value+="-">-</button>
+
+          
+        </div>
+
+        <div class="calc-buttons">
+              <button class="btn" id="4" value="4" onclick=input.value+="4">4</button>
+            <button class="btn" id="5" value="5" onclick=input.value+="5">5</button>
+            <button class="btn" id="6" value="6" onclick=input.value+="6">6</button>
+            <button class="btn" id="add" value="+" onclick=input.value+="+">+</button>
+
+        </div>
+
+        <div class="calc-buttons">
+
+             <button class="btn" id="1" value="1" onclick=input.value+="1">1</button>
+            <button class="btn" id="2" value="2" onclick=input.value+="2">2</button>
+            <button class="btn" id="3" value="3" onclick=input.value+="3">3</button>
+            <button class="btn" id="decimal" value="." onclick=input.value+=".">.</button>
+
+
+           
+        </div>
+        <div class=" last-row">
+            <button class ="btn dbzero" onclick=input.value+="00">00</button>
+             <button class="btn zero-btn" id="0" value="0" onclick=input.value+="0">0</button>
+            <button class="btn equal-btn" id="equal" onclick=input.value=eval(input.value)>=</button>
+
+        </div>
+
+    </section>
+
+  </div>
+
+
+    <script src="./calc.js"></script>
+</body>
+</html>

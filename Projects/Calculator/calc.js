@@ -1,0 +1,3 @@
+
+const inputTag=document.getElementById("input");
+
