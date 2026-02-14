@@ -11,10 +11,5 @@
 
 
 
+
 const buttonTag=document.getElementsByClassName("button")
-
-buttonTag.addEventListener("click",()=>{
-
-    document.style.backgroundColor="red"
-})
-
