@@ -9,7 +9,15 @@
 // divTag.style.textAlign="center"
 
 
+const UserTag=document.getElementById("user").value
+const PassTag=document.getElementById("pass")
+const BtnTag=document.getElementById("btn")
+const pTag=document.getElementById("p")
 
 
+function formSubmit(e){
+    
 
-const buttonTag=document.getElementsByClassName("button")
+    document.pTag.innerText=UserTag;
+
+}
