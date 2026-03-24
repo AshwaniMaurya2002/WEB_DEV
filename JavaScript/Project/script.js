@@ -15,7 +15,6 @@ themeBtn.addEventListener('click',()=>{
 })
 
 
-
 async function fetchAllProduct() {
 try{
         let resp=await fetch("https://dummyjson.com/products")
