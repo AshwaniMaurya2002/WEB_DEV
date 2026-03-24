@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.nav 
+{
+    text-align: center;
+    background-color: black;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.choice img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
