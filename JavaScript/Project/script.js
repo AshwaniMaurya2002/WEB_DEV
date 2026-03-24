@@ -6,7 +6,6 @@ if(localStorage.getItem("theme")==="dark"){
 }
 
 
-
 themeBtn.addEventListener('click',()=>{
     document.body.classList.toggle("dark")
 
