@@ -61,11 +61,9 @@ p1.catch(()=>{
 })
 
 
-//Penidg kuch na chlega
+//Pending kuch na chlega
 //then fullfilled me chlega
 //catch rejected me chlega
-
-
 
 
 let promise1=fetch("https://jsonplaceholder.typicode.com/todos")
