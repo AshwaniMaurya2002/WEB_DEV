@@ -136,16 +136,3 @@ promise.catch((error)=>{
 promise.finally(()=>{
     console.log("API completed");
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
