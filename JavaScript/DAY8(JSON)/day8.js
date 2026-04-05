@@ -1,6 +1,4 @@
-
 //! JSON local storage and session
-
 let user1={
     id:1,
     fname:"john",
@@ -8,7 +6,6 @@ let user1={
     sal:50000,
     company:"Qspider",
 }
-
  //? Store data in localstorage  or Session Storage
  //convert object into json which is string  or we can say js to json
 //  let jsonObject=JSON.stringify(user1);
@@ -32,8 +29,6 @@ let user1={
 //  //! remove all the keys from the local or session storage
 
 //  localStorage.clear();
-
-
 //!API methods
 //response store in then block and error store in catch block
 //? incase of internet issue it gives failed to fetch

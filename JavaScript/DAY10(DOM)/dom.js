@@ -1,7 +1,5 @@
     // //! Document Object Model
 
-
-
 // //? Dom selectos: to target html elements and apply fucntionality to it there are 5 type of DOM selectors
 
 // //* 1) document.getElementById(); //return only first element single return while scanning from top to bottom
