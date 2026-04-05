@@ -52,8 +52,6 @@
 // const ele4=document.querySelector("section , .content, #subheading")
 // console.log(ele4);
 
-
-
 // // document.querySelectorAll()
 // //same as queryselector but target multiple elements
 
