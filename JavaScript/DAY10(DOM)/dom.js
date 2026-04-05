@@ -27,8 +27,6 @@
 
 // //! Note: -- HtmlCollection is a array like object it is not a pure aarray beccause it does not have array propertyy in their prototype
 
-
-
 // //! 3) document.getElementsByTagName()
 
 // let sections=document.getElementsByTagName("section")
