@@ -7,5 +7,7 @@ import UserCard from './components/UserCard.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <UserCard />
+    <UserCard />
+    <UserCard />
   </StrictMode>,
 )
