@@ -34,8 +34,6 @@
 // toggleBtn.addEventListener("click",function (){
 //     console.log("This in event listener arrow  Callback: ",this);
 // });
-
-
 const user={
     fullname:"Tinku singh",
     age:24,
