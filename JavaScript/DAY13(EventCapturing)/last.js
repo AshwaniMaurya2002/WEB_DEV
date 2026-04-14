@@ -1,4 +1,3 @@
-
 // ! Event Propogation  ::==> the process how event travels in dom tree 
 
 const section=document.querySelector("section")
@@ -6,7 +5,6 @@ const article=document.querySelector("article")
 const div=document.querySelector("div")
 
 //? it propogation has 2 phase 
-
 //!  arr.addEventListner("event",callback,use-capture)
 //1) caputring phase parent to child ===1  
 //2) bubbling phase child to parent  ===0  by default
