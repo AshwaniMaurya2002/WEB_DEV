@@ -11,19 +11,21 @@ const x=async()=>{
 
 
 
-function display(data){
+
+function display(data) {
     data.forEach((element) => {
-        let div=document.createElement("div");
-        div.setAttribute("class","card");   
+        let div = document.createElement("div");
+        div.setAttribute("class", "card");   
 
-        let img=document.createElement("img");
-        img.src=element.url;
+        let img = document.createElement("img");
+        img.src = element.url;
 
-        let title=document.createElement("h3");
-        title.innerText=element.title;  
+        let title = document.createElement("h3");
+        title.innerText = element.title;  
 
-        body.append(div);
-        div.append(img,title);
+        document.body.append(div);
+        div.append(img, title);
     });
 }
-    
+
+x();
