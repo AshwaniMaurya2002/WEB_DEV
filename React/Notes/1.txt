@@ -13,9 +13,15 @@ Important:-
 never edits files inside it manually and do not commit it to the git(it usually ignored via .gitignore)
 
 
+ex---> axios ,react, vite
+
+
 2)public 
 Folder for static files(like image,features) that are saved as is.
+ex---> svg
 gitignore:-->fike that tells git which files/folder to ignore (gitignore)
+ex--> node_module,.env
+
 
 
 3) what is ESlint.config.js
@@ -44,4 +50,16 @@ it record the exact version of every package and sub package installed
 
 
 why it exsist?
-to ensure everyone one the team get the same exact version of packages
+to ensure everyone on the team get the same exact version of packages
+
+6)readme.md
+A markdown file that serves as the documentation for your project
+
+
+7) vite.config.js
+
+configuration file for vite (build tool & dev serves).
+
+
+
+
