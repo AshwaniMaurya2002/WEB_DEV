@@ -16,7 +16,7 @@ const Card=()=>{
     <h2>{user.age}</h2>
     <h2>{user.city}</h2>
     <h2>{user.email}</h2>
-    <h2>{user.pic}</h2>
+    <img src={user.pic} alt="User Profile"/>
 
     </>
 }
