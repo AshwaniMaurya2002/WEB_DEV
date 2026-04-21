@@ -6,7 +6,7 @@ import  { Fragment } from 'react'
 const Card = () => {
 
     const emp={
-        empName="Rohan",
+        empName:"Rohan",
         age:69,
         skill: "timepass",
         pic:"https://www.dpzone.in/wp-content/uploads/1/Cool-DP-Images-05.webp"
