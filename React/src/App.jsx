@@ -1,13 +1,13 @@
 
 
+import Card from "./Topic 1 JSX/Card"
+
+
 //?this is a component
- const App=()=>{
+  const App=()=>{
 
-  return <h1>Hello from React</h1>
+  return <Card/>
 }
-
-const heading= <h1>Hello my friend</h1>
-
 
 export default App;
 
