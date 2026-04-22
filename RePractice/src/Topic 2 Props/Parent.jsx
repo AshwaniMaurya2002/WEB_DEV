@@ -12,12 +12,12 @@ const Parent = () => {
   return <div>
 
   {/* method 2 */}
-  <Card  {...user}/>
+  {/* <Card  {...user}/> */}
   {/* method 3 */}
-  <Card username={user.username}  age={39} />
+  {/* <Card username={user.username}  age={39} /> */}
 
   {/* method 4 */}
-  <Card/>
+  <Card player={user} />
 
   </div>;
 };

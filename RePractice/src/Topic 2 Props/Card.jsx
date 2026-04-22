@@ -3,8 +3,13 @@ const Card=(props)=>{
 
 
 
+
     //!use method2
-    const{username="chombu",age,team,skill}=props
+    // const{username="chombu",age,team,skill}=props
+
+    //?method 3
+    const{username,skill,team,age}=props?.player
+
 
     return (
         //?use no 1
