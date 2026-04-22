@@ -1,12 +1,17 @@
 
 
-import Card from "./Topic 1 JSX/Card"
+// import Card from "./Topic 1 JSX/Card"
+import Parent from "./Topic 2 Props/Parent";
 
 
 //?this is a component
   const App=()=>{
 
-  return <Card/>
+  return (<div  className="app-component">
+  
+  <Parent/>
+  
+  </div>)
 }
 
 export default App;
