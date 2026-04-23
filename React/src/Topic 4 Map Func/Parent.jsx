@@ -8,7 +8,9 @@ const Parent = () => {
         {username:"rohan "  , age:29 ,city:"Noida"},
         {username:"mohit "  , age:33 ,city:"Noida"},
         {username:"shiv "  , age:25 ,city:"Noida"},
-        {username:"rupesh "  , age:22 ,city:"Noida"}
+        {username:"rupesh "  , age:22 ,city:"Noida"},
+        {username:"ramesh "  , age:22 ,city:"Noida"},
+        {username:"kittu "  , age:22 ,city:"Noida"}
     ]
 
   return (
@@ -36,8 +38,11 @@ const Parent = () => {
 
 
 
+            {/* method 3 using map function this will send all the data to the Card element */}
 
-        
+        {user.map((element)=>  <Card {...element}/>)} 
+
+
       
     </div>
   )
