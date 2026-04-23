@@ -18,8 +18,10 @@ const Parent = () => {
          * 
          * hard coded then pass like
          * 
+         * <Card  >
+         * this method send all data to the Card
          */}
-        <Card  />
+        <Card   user={user} />
       
     </div>
   )
