@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { use } from 'react'
 import Card from './Card'
 
 const Parent = () => {
@@ -21,7 +21,14 @@ const Parent = () => {
          * <Card  >
          * this method send all data to the Card
          */}
-        <Card   user={user} />
+
+         {/* method one to send data but it is present inside the props.user[0].username */}
+        {/* <Card   user={user} /> */}
+
+
+
+        
+        <Card {...user}/>
       
     </div>
   )

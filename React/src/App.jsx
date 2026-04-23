@@ -1,7 +1,7 @@
 
 
 // import Card from "./Topic 1 JSX/Card"
-import Parent from "./Topic 3 Immutable Props/Parent"
+import Parent from "./Topic 4 Map Func/Parent";
 
 
 //?this is a component
