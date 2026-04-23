@@ -27,8 +27,17 @@ const Parent = () => {
 
 
 
+
+            {/* method 2 you can call the by sending data like this  with index number */}
+        {/* <Card {...user[0]}/>
+        <Card {...user[1]}/>
+        <Card {...user[2]}/> */}
+
+
+
+
+
         
-        <Card {...user}/>
       
     </div>
   )
