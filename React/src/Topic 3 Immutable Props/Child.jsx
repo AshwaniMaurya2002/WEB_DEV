@@ -1,8 +1,13 @@
+import React from 'react'
+import Subchild from './Subchild'
 
+const Child = (props) => {
 
-const Child=(props)=>{
+  
 
-    console.log(props)
+  return (
+   <Subchild props={props}/>
+  )
 }
 
-export default Child;
+export default Child

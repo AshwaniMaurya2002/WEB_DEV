@@ -12,3 +12,5 @@ const age=24;
 <Child  username={username} age={age}/>
     </div>
 }
+
+export default Parent;
