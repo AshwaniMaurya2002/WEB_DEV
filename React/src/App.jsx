@@ -1,7 +1,9 @@
 
 
 // import Card from "./Topic 1 JSX/Card"
-import Parent from "./Topic 4 Map Func/Parent";
+
+import Parent from "./Topic 5 children prop/Parent";
+
 
 
 //?this is a component
@@ -9,7 +11,8 @@ import Parent from "./Topic 4 Map Func/Parent";
 
   return (<div  className="app-component">
   
-  <Parent/>
+  <Parent></Parent>
+
   
   </div>)
 }

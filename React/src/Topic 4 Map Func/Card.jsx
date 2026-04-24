@@ -11,7 +11,6 @@ const Card = (props) => {
         <h2>{props.city}</h2>
         <h2>===============</h2>
        
-      
     </div>
   )
 }
