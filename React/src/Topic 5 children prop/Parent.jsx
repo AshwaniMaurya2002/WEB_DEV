@@ -2,22 +2,22 @@ import React from "react";
 import Child from "./Child";
 
 const Parent = () => {
-  const user = {
-    name: "ashwani",
-    age: 24,
-  };
+  const skills = ["javascript", "react", "angular", "vue"];
 
   return (
     <div id="parent">
-      <Child {...user}></Child>
+      {skills.map((element) => (
+        <Card name={skills} />
+      ))}
 
-      <Child>
-        <h3>Parent Component</h3>
+      {/* <Child> */}
+      {/* inside this we can write we can access it using props.children  */}
+      {/* <h3>Parent Component</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
           sapiente.
-        </p>
-      </Child>
+        </p> */}
+      {/* </Child> */}
     </div>
   );
 };
