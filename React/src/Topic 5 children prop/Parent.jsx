@@ -6,10 +6,11 @@ const Parent = () => {
 
   return (
     <div id="parent">
-      {skills.map((element) => (
-        <li> {(name = { element })}</li>
-      ))}
-
+      <ul>
+        {skills.map((element, index) => (
+          <Child key={index} name={element} />
+        ))}
+      </ul>
       {/* <Child> */}
       {/* inside this we can write we can access it using props.children  */}
       {/* <h3>Parent Component</h3>
