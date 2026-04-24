@@ -1,11 +1,13 @@
 import React from "react";
 
-const Child = (props) => {
+const Child = ({ name }) => {
   // return <div id="child">{props.children}</div>;
 
-  return <div>
-    
-  </div>
+  return (
+    <div>
+      <h2>{name}</h2>
+    </div>
+  );
 };
 
 export default Child;
