@@ -7,7 +7,7 @@ const Parent = () => {
   return (
     <div id="parent">
       {skills.map((element) => (
-        <Card name={skills} />
+        <li> {(name = { element })}</li>
       ))}
 
       {/* <Child> */}
