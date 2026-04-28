@@ -107,3 +107,5 @@ Note: to Avoid props drilling we use context API react state management
 render props is when you pass a function as a prop to a component and that component calls
  the function to render something
 
+
+
