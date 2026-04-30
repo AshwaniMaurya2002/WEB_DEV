@@ -95,3 +95,4 @@ initialValue-> intial value of the state (can be number ,string,boolean ,object,
 batcvhing in react is the process where react groups multiple state update into a single re - render instead of re rendring the component after every indivdual state upadte.
 
 this imporves performance by reducing unnecessary re - renders.
+

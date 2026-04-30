@@ -1,6 +1,8 @@
 // import Card from "./Topic 7 synthetic events/Card";
 
-import Toggle from "./Topic 9 Conditional rendering/Toggle";
+import Toggle from "./Topic 10 Lazy initiallization/Toggle";
+
+// import Toggle from "./Topic 9 Conditional rendering/Toggle";
 
 // import Home from "./Topic 9 Conditional rendering/Home";
 
