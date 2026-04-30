@@ -46,3 +46,52 @@ A markdown file that serves as the documentation for your project
 
 7. vite.config.js
    configuration file for vite (build tool & dev serves).
+
+   # what is state ?
+
+   state in react is an internal mutable data structure that represent the dynamic data of a component..
+   whenever state varible changes react will re render the components.
+
+# Difference between state and props ?
+
+props are immutable
+props are used for passing data from one component to another component
+props are owned and controlled by the parent compononent.
+
+state.
+
+state is mutable
+state is internal component
+the compnoent that declares it can direclty read or update it
+state update trigger re- render
+
+# what is Hooks
+
+hooks are special built in function in react that allows you to use state and other react features (like lifecyle methods, context refs ,etc ) in function components.
+
+features::-->
+
+Hooks introduced in react 16.8
+hooks allow function components to be stateful
+hook start with use
+enable better code reuse..
+
+# what is useState Hooks
+
+1- useState is a built in react hooks that allows you to add and manage local state in functional components
+
+it return an array with two elements the current state value and a function to update the state.
+
+sytnax:::::-
+
+const[state,setState]=useState(initialValue);
+
+state-> current value of the state (read only)
+setState-function used to update the state
+initialValue-> intial value of the state (can be number ,string,boolean ,object,array)
+
+# what is Batching
+
+batcvhing in react is the process where react groups multiple state update into a single re - render instead of re rendring the component after every indivdual state upadte.
+
+this imporves performance by reducing unnecessary re - renders.
