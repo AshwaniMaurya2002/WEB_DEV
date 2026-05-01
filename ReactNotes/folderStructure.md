@@ -1,6 +1,6 @@
 # [Folder strucutre in React]
 
-1. node\_ module:
+1. node _ module:
 
 --> this is a folder automativally crreated when you run npm install or yarn install
 
