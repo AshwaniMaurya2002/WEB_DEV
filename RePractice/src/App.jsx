@@ -4,7 +4,6 @@
 // import Parent from "./Topic 3 Immutable and map function/Parent";
 
 import Counter from "./Topic 4 states/Counter";
-
 const App = () => {
   return <Counter />;
 };
