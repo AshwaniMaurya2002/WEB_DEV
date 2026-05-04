@@ -1,25 +1,38 @@
 import React, { useEffect, useState } from "react";
+import Shimmer from "./Shimmer";
+import Card from "./Card";
 
 const Shop = () => {
+  const [response, setResponse] = useState([]);
 
-    const[response ,setResponse]=useState([]);
+  useEffect(() => {
+    const getProducts = async () => {
+      const response = await fetch(
+        "https://api.theindianhome.in/api/product/list",
+        { cache: "no-store" },
+      );
 
-    useEffect(()=>{
+      const data = await response.json();
 
-        const getProducts=async()=>{
+      console.log("data ", data);
 
-            const response=
-        }
+      setResponse(data?.products);
+    };
 
+    getProducts();
+  }, []);
 
+  if (response.length === 0) {
+    return <Shimmer />;
+  }
 
-    },[])
-
-
-
-
-
-  return <div></div>;
+  return (
+    <div className="shop-container">
+      {response.map((element) => (
+        <Card key={element._id} {...element} />
+      ))}
+    </div>
+  );
 };
 
 export default Shop;
