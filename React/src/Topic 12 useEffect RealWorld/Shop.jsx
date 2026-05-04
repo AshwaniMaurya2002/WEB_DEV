@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 import Card from "./Card";
+import "./shop.css";
 
 const Shop = () => {
   const [response, setResponse] = useState([]);
