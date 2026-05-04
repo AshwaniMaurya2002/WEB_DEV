@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Shop = () => {
 
-    const[response]
+    const[response ,setResponse]=useState([]);
+
+
+    
+
+
   return <div></div>;
 };
 
