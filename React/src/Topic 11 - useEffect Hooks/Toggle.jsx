@@ -1,16 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from "react";
 
 const Toggle = () => {
+  const [login, setLogin] = useState(false);
+  const [count, setCount] = useState(0);
 
-    const[login,setLogin]=useState(false);
-    const[count,setCount]
+  useEffect(() => {
+    if (count === 0) {
+      return;
+    }
+    console.log("use effect running");
+  }, [count]);
+  //   we can pass run once useEffect(()=>{},[])  or  run one count change useEffect(()=>{},[count ]) or useEffect(()=>{}) run always
 
+  console.log("toggle running");
 
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <h2>Count: {count}</h2>
+      <button onClick={() => setCount(count + 1)}>Add Count</button>
 
-export default Toggle
+      {login ? <h2>Welcome User</h2> : <h2>Please Login</h2>}
+      <button onClick={() => setLogin(!login)}>Click</button>
+    </>
+  );
+};
+
+export default Toggle;
