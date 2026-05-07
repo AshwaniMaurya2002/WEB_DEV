@@ -1,16 +1,14 @@
-// import Card from "./Topic 7 synthetic events/Card";
+import React from "react";
 
-// import Toggle from "./Topic 11 - useEffect Hooks/Toggle
-import Shop from "./Topic 12 useEffect RealWorld/Shop";
+import { Outlet } from "react-router-dom";
+import Header from "./Topic 14 React Routing/Header";
 
-//?this is a component
 const App = () => {
   return (
-    <div className="app-component">
-      {/* <Toggle />
-       */}
+    <div id="app">
+      <Header />
 
-      <Shop />
+      <Outlet />
     </div>
   );
 };
