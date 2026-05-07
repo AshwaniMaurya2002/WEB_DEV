@@ -1,6 +1,6 @@
 # [Folder strucutre in React]
 
-1. node _ module:
+1. node \_ module:
 
 --> this is a folder automativally crreated when you run npm install or yarn install
 
@@ -95,3 +95,98 @@ initialValue-> intial value of the state (can be number ,string,boolean ,object,
 batcvhing in react is the process where react groups multiple state update into a single re - render instead of re rendring the component after every indivdual state upadte.
 
 this imporves performance by reducing unnecessary re - renders.
+
+# what is single page Application?
+
+A single Page Application is a web app that loads a single HTML documents and dynamically update the dom using js instead of requesting new pages from the server on each navigation.
+
+# what is multi page application ?
+
+A multi-page application (MPA) is a traditional web architeccture where every user interaction like clicking link or submitting a form- tiggers a full browser referesh to load a completely new HTML page from the server.
+
+# diff between SPA and MPA?
+
+aspect spa mpa
+
+pages loads: one initial load full reaload page
+
+perfo faster slower
+
+seo hard naturally
+
+developemt usually one codebase traditional
+intial load slight high low
+
+# what is client side routing?
+
+client side rotuing is when the navigation between pages is handle by javaScript in the browser. Instead of requestion a new pages from the server, the js libraries (like react vue router)
+update the url using history api and renders the apporpriate component/view without reloading page
+
+# what is server side routing ?
+
+server- side routing is the traditional methods where the browser sends a request to the server for every new url the server then generates and sends back a complete html page causing a full browser refersh
+
+# what is react-router-dom?
+
+React Router dom is a popular library for client -side routing in react application.
+it allows you ti create SPA.
+
+# what is createBrowserRouter and BrowserRouter.
+
+### createBrowserRouter
+
+a function introduced in react router v6.4+ that create a router instance using the history api.
+it is the recommend way to define routes as it supports data API like loader , actions and fetchers.
+
+### browser router
+
+a component that wraps your app and enable client-side routing using the history API. it does
+not support react router v6.4+ data apis like loader and actions
+
+### diff btwn link and navlink?
+
+### LInk
+
+A component that renders and anchor tags and navigators(move) to a route without a full page
+reload.
+
+used in for general navigation (eg. "read more",button or a link in footer)
+
+### navlink
+
+same as link but applies an active class when its rotues matches the current url
+used in navbar or dashboard tabs
+
+# 37 what is an outlet?
+
+a compnoent used in parent routes that acts as a placeholder where the matched child routes component get
+rendered.
+
+syntax:-->
+
+function DashBoard(){
+return(
+
+<div>
+<h1>DashBoard</h1>
+<Oulet/ > {/\* child router renders here}
+</div>
+)
+}
+
+# 38 what is index props?
+
+a boolean prop on a route that marks it as the default child route , render inside the parents Outlet when no other child rotue matches.
+
+syntax:
+
+const router=createBrowserRouter([
+{
+path:/"dashboard",
+element:<Dashboard/>,
+children:[
+{index:true,element:<DashBoardHOme/>}, //render when path is exaclty /dashboard
+{path:"setting",element:<Setting/>}
+]
+}
+])
