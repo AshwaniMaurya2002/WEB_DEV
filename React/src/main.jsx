@@ -30,7 +30,15 @@ const appRouter = createBrowserRouter([
         path: "order",
         element: <Order />,
       },
+      {
+        path: "products/:id",
+        element: <ProductPage />,
+      },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 
