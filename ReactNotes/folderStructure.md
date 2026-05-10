@@ -1,192 +1,486 @@
-# [Folder strucutre in React]
+## 3. What is JSX? What are the rules to rite JSX?
 
-1. node \_ module:
+- JSX stands for JavaScript XML.
+- It is a syntax extension for JavaScript that allows you to write HTML-like code inside JavaScript files.
+- It was introduced by Facebook (Meta) for React.
 
---> this is a folder automativally crreated when you run npm install or yarn install
+There rules are:-
 
---> it contains all the installed dependencies package your project needs including react vite ESlint and any third party library
+1. Return Only One Parent Element
+2. All Tags (including Self-Closing Tags) Must Be Properly Closed .
+3. Use CamelCase for Attributes (ex:- onclick, onChange)
+4. JavaScript Expressions in {}
+5. To write comment in JSX use
+   `{/* */}`
+6. Don't use if-else directly inside JSX instead use ternary or logical operator.
+7. Use className instead of class.
+8. Use htmlFor instead of for in label tag.
 
-# Important:-
+## 4. What is a component in React? Types of component?
 
-never edits files inside it manually and do not commit it to the git(it usually ignored via .gitignore)
+A component in React is a reusable(self-contained) piece of code that returns some piece of JSX.
 
-ex---> axios ,react, vite
+It is of 2 types
 
-2. public
-   Folder for static files(like image,features) that are saved as is.
-   ex---> svg
-   gitignore:-->fike that tells git which files/folder to ignore (gitignore)
-   ex--> node_module,.env
+1. Class Based component(CBC)
+   - A Class Component is a JavaScript class that extends React.Component.
+   - It has render() method to return JSX.
+   - It was the traditional way of writing React components before 2019.
 
-3. what is ESlint.config.js
+2. Function Based Component (FBC)
+   - A function based component is a simple javascript function which returns some piece of jsx.
+   - It is now the recommended and most popular way to write components in modern React.
 
---is the configuration file for ESlint a popular tool that analyzes your js/ts code for the error bugs and style issues.
+## 5. What is React.Fragment and What is Empty Fragment?
 
---ESlint.config.js tells ESlint how to check your code and what rules to follow
+1. Fragment:- A wrapper component that lets you group multiple elements without adding an extra DOM node to the HTML output.
 
-4. package.json
+2. Empty Fragment:- A shorthand syntax for React.Fragment that does the same thing — groups elements without extra DOM nodes — but doesn't support the key prop.
 
-   it is the most Important file in any js node.js project
-   it act likes the identity card of your project.
+Note:- we can not write id and className attribute in both fragment.
 
-what it contains
-project name,version,description
+## 6. What is Component Composition?
 
-all dependencies (package) your project needs
-script like(npm run dev, npm run build)
+Component Composition is the practice of calling one component inside another component.
 
-5. package-lock.json
-   it is an auto generated file crreated by npm.
-   it record the exact version of every package and sub package installed
+#### Example
 
-# why it exsist?
-
-to ensure everyone on the team get the same exact version of packages 6. readme.md
-A markdown file that serves as the documentation for your project
-
-7. vite.config.js
-   configuration file for vite (build tool & dev serves).
-
-   # what is state ?
-
-   state in react is an internal mutable data structure that represent the dynamic data of a component..
-   whenever state varible changes react will re render the components.
-
-# Difference between state and props ?
-
-props are immutable
-props are used for passing data from one component to another component
-props are owned and controlled by the parent compononent.
-
-state.
-
-state is mutable
-state is internal component
-the compnoent that declares it can direclty read or update it
-state update trigger re- render
-
-# what is Hooks
-
-hooks are special built in function in react that allows you to use state and other react features (like lifecyle methods, context refs ,etc ) in function components.
-
-features::-->
-
-Hooks introduced in react 16.8
-hooks allow function components to be stateful
-hook start with use
-enable better code reuse..
-
-# what is useState Hooks
-
-1- useState is a built in react hooks that allows you to add and manage local state in functional components
-
-it return an array with two elements the current state value and a function to update the state.
-
-sytnax:::::-
-
-const[state,setState]=useState(initialValue);
-
-state-> current value of the state (read only)
-setState-function used to update the state
-initialValue-> intial value of the state (can be number ,string,boolean ,object,array)
-
-# what is Batching
-
-batcvhing in react is the process where react groups multiple state update into a single re - render instead of re rendring the component after every indivdual state upadte.
-
-this imporves performance by reducing unnecessary re - renders.
-
-# what is single page Application?
-
-A single Page Application is a web app that loads a single HTML documents and dynamically update the dom using js instead of requesting new pages from the server on each navigation.
-
-# what is multi page application ?
-
-A multi-page application (MPA) is a traditional web architeccture where every user interaction like clicking link or submitting a form- tiggers a full browser referesh to load a completely new HTML page from the server.
-
-# diff between SPA and MPA?
-
-aspect spa mpa
-
-pages loads: one initial load full reaload page
-
-perfo faster slower
-
-seo hard naturally
-
-developemt usually one codebase traditional
-intial load slight high low
-
-# what is client side routing?
-
-client side rotuing is when the navigation between pages is handle by javaScript in the browser. Instead of requestion a new pages from the server, the js libraries (like react vue router)
-update the url using history api and renders the apporpriate component/view without reloading page
-
-# what is server side routing ?
-
-server- side routing is the traditional methods where the browser sends a request to the server for every new url the server then generates and sends back a complete html page causing a full browser refersh
-
-# what is react-router-dom?
-
-React Router dom is a popular library for client -side routing in react application.
-it allows you ti create SPA.
-
-# what is createBrowserRouter and BrowserRouter.
-
-### createBrowserRouter
-
-a function introduced in react router v6.4+ that create a router instance using the history api.
-it is the recommend way to define routes as it supports data API like loader , actions and fetchers.
-
-### browser router
-
-a component that wraps your app and enable client-side routing using the history API. it does
-not support react router v6.4+ data apis like loader and actions
-
-### diff btwn link and navlink?
-
-### LInk
-
-A component that renders and anchor tags and navigators(move) to a route without a full page
-reload.
-
-used in for general navigation (eg. "read more",button or a link in footer)
-
-### navlink
-
-same as link but applies an active class when its rotues matches the current url
-used in navbar or dashboard tabs
-
-# 37 what is an outlet?
-
-a compnoent used in parent routes that acts as a placeholder where the matched child routes component get
-rendered.
-
-syntax:-->
-
-function DashBoard(){
-return(
-
-<div>
-<h1>DashBoard</h1>
-<Oulet/ > {/\* child router renders here}
-</div>
-)
+```
+function Header() {
+  return <h1>Welcome</h1>;
 }
 
-# 38 what is index props?
-
-a boolean prop on a route that marks it as the default child route , render inside the parents Outlet when no other child rotue matches.
-
-syntax:
-
-const router=createBrowserRouter([
-{
-path:/"dashboard",
-element:<Dashboard/>,
-children:[
-{index:true,element:<DashBoardHOme/>}, //render when path is exaclty /dashboard
-{path:"setting",element:<Setting/>}
-]
+function App() {
+  return (
+    <div>
+      <Header />  {/* Header component called inside App */}
+    </div>
+  );
 }
-])
+```
+
+## 7. What is Props?
+
+Props (short for "properties") are a mechanism used to pass data from one component to another, typically in a unidirectional (top-down) flow from parent to child.
+
+#### Example
+
+```
+  // Parent passes props
+  <Greeting name="Alice" age={25} />
+
+  // Child receives and uses them
+  function Greeting({ name, age }) {
+    return <h1>Hello, {name}! You are {age} years old.</h1>;
+  }
+```
+
+## 8. what is default props?
+
+Default props in React allow you to define fallback values for a component's properties (props)
+
+#### Example
+
+```
+function Greeting({ name = "Guest", age = 18 }) {
+  return (
+    <h1>Hello, {name}! You are {age} years old.</h1>
+  );
+}
+
+<Greeting />
+Component call Without passing props:
+```
+
+## 9. Why we use Props or characteristics of props?
+
+##### Characteristics
+
+- Immutable:- a child component cannot modify its own props
+- Unidirectional:- data flows only from parent → child
+- Any type:- strings, numbers, arrays, objects, functions, even JSX
+- Destructured:- commonly destructured in the function signature for cleaner code
+
+##### Usecase
+
+- Pass Data:- Send data from parent component to child component
+- Reusability:- Same component can be used multiple times with different data
+- Dynamic Content:- Components show different content based on props received
+- Avoid Repetition:- Write the component once, reuse it anywhere
+- Communication:- The only way for a parent to talk to a child component
+
+## 10. What is Children prop?
+
+1.  children prop is a special, built-in property that allows you to pass content between the opening and closing tags of a component.
+2.  Anything placed inside a component's tags is automatically passed to that component as props.children.
+3.  Children can be strings, numbers, JSX elements, arrays, or even functions.
+
+#### Example
+
+```
+ function Card({ children }) {
+   return <div className="card">{children}</div>;
+ }
+
+ // Now you can put ANYTHING inside Card Component
+ <Card>
+   <h2>Title</h2>
+   <p>Description here</p>
+ </Card>
+```
+
+## 11. What is Props Drilling?
+
+1. Prop Drilling is the process of passing data (props) through multiple layers of components to reach a deeply nested child that needs it, even if the intermediate components do not use that data
+
+##### NOTE: To avoid props drilling we use context API, React State Management Libraries.
+
+#### Example
+
+```
+    // ✅ Data starts here in Parent
+    function Parent() {
+      const name = "Alice";
+      const age = 25;
+
+      return (
+        <div>
+          <h1>I am Parent</h1>
+          <Child name={name} age={age} />  {/* passing to Child */}
+        </div>
+      );
+    }
+
+
+    // ✅ Child receives and passes down to SubChild
+    function Child({ name, age }) {
+      return (
+        <div>
+          <h2>I am Child</h2>
+          <SubChild name={name} age={age} />  {/* passing to SubChild */}
+        </div>
+      );
+    }
+
+
+    // ✅ SubChild finally uses the data
+    function SubChild({ name, age }) {
+      return (
+        <div>
+          <h3>I am SubChild</h3>
+          <p>Name: {name}</p>
+          <p>Age: {age}</p>
+        </div>
+      );
+    }
+```
+
+## 12. What is render prop?
+
+1.  Render Prop is when you pass a function as a prop to a component, and that component calls the function to render something.
+
+#### Example
+
+```
+     // Component accepts a function as a prop
+     function Greet({ render }) {
+       return <div>{render("Alice")}</div>; // calls the function
+     }
+
+     // Passing a function as a prop
+     <Greet render={(name) => <h1>Hello, {name}!</h1>} />
+
+     // Output → Hello, Alice!
+```
+
+## 13. what is Synthetic event in React?
+
+1. A synthetic event in React is a cross-browser wrapper around the browser's native event object.
+2. React normalizes events so they behave identically across all browsers.
+3. Instead of getting a raw MouseEvent or KeyboardEvent from the DOM, you get a SyntheticEvent object that has the same interface (preventDefault(), stopPropagation(), target, currentTarget, etc.) but works consistently everywhere.
+
+## 14. What is Virtual Dom?
+
+1. The Virtual DOM (VDOM) is a lightweight, in-memory JavaScript representation (a tree of JavaScript objects) of the Real DOM.
+2. Instead of updating the Real DOM every time something changes, React maintains a virtual copy of it in memory.
+3. React uses it to create a new tree on every re-render and then compares it with the previous one to optimize DOM updates.
+
+## 15. What is Reconcilliation?
+
+Reconciliation is the process React uses to figure out how to efficiently update the DOM (Document Object Model) when changes occur in the UI
+
+## 16. What is Diffing Algorithm?
+
+Diffing Algorithm is React’s heuristic-based[ o(n) ] comparison algorithm that efficiently finds differences between the new and old Virtual DOM trees.
+
+# 17. What is Render Phase?
+
+The Render Phase is the first phase of React’s reconciliation process. During this phase, React invokes the component functions (or render() method in class components), creates a new Virtual DOM tree, and performs diffing to determine the minimal set of changes needed to update the UI.
+
+- It is pure and side-effect free.
+- React may pause, abort, or restart this phase multiple times (due to concurrent rendering in React 18+).
+- No DOM mutations or side effects should occur here.
+
+# 18. What is Commit Phase?
+
+The Commit Phase is the second and final phase of React’s reconciliation process. In this phase, React applies the calculated changes (mutations) to the real DOM in a single, synchronous batch.
+
+- It runs after the Render Phase is completed.
+- Side effects are executed here:
+  - useLayoutEffect() (before browser paint)
+  - useEffect() (after browser paint)
+
+# 19. what is State?
+
+- State in React is an internal, mutable data structure that represents the dynamic data of a component.
+- whenever state variable changes react will re-render the component.
+
+# 20. Difference between state and props?
+
+### props
+
+1. Props are Immutable
+2. Props are used for passing data from one component to another component.
+3. Props are owned and controlled by the parent component.
+4. The child component only receives and consumes them.
+
+### state
+
+1. State is Mutable
+2. State is internal to the component.
+3. The component that declares it can directly read or update it.
+4. State Update Triggers Re-render
+
+# 21. What is Hooks?
+
+- Hooks are special built-in functions in React that allow you to use state and other React features (like lifecycle methods, context, refs, etc.) in functional components.
+
+#### Features
+
+- Hooks introduced in React 16.8
+- Hooks allow Functional Components to be Stateful
+- Hooks Start with "use"
+- Enable Better Code Reuse
+
+# 22. What is useState Hook?
+
+1. "useState is a built-in React Hook that allows you to add and manage local state in functional components.
+2. It returns an array with two elements: the current state value and a function to update that state."
+
+#### syntax
+
+```
+const [state, setState] = useState(initialValue);
+```
+
+- state → Current value of the state (read-only)
+- setState → Function used to update the state
+- initialValue → Initial value of the state (can be number, string, boolean, object, array, etc.)
+
+# 23. What is Batching?
+
+- Batching in React is the process where React groups multiple state updates into a single re-render instead of re-rendering the component after every individual state update.
+- This improves performance by reducing unnecessary re-renders.
+
+# 24. what is conditional Rendering?
+
+- Conditional Rendering in React is the technique of rendering different UI elements or components based on certain conditions.
+- Here we use if-else, ternary operator and logical operator(short circuit operator).
+
+# 25. can we write function as an initial value in useState(fn) Lazy Initialization?
+
+- "Lazy Initialization in useState is a technique where we pass a function as the initial value to useState. React calls this function only once during the initial render of the component and uses its return value as the initial state.
+- This is useful for expensive computations that should not run on every re-render."
+
+#### syntax
+
+```
+const [state, setState] = useState(() => {
+  // This function runs ONLY ONCE during initial render
+  return expensiveComputation();
+});
+```
+
+## 26. what is useEffect?
+
+The useEffect hook is a built-in React function that allows you to perform side effects in functional components.
+
+Side effects are operations that interact with systems outside of React's (like api call).
+
+### 1. No dependency array - runs after every render
+
+#### syntax
+
+```
+useEffect(() => {
+  console.log("runs after every render");
+});
+```
+
+### 2. Empty dependency array - runs once on mount
+
+#### syntax
+
+```
+useEffect(() => {
+  console.log("runs once, like componentDidMount");
+}, []);
+```
+
+### 3. With dependencies - runs when those values change
+
+#### syntax
+
+```
+useEffect(() => {
+  console.log("runs when count or name changes");
+}, [count, name]);
+```
+
+## 27. difference between useState and useEffect Hook?
+
+#### useState:
+
+- Used to add and manage state (data) in functional components.
+- Returns an array with 2 values: [currentState, setState].
+- Updating state with setState() triggers a re-render of the component.
+- Preserves value between re-renders.
+
+### useEffect:
+
+- Used to perform side effects (actions outside normal rendering).
+- Runs after the component renders (and after paint in most cases).
+- Common uses: data fetching, DOM manipulation, subscriptions, timers, event listeners.
+- The useEffect hook itself does not return any value (it returns undefined).
+
+## 28. what is React lifecycle methods in Function Based Component?
+
+    Every React component goes through 3 phases in its life:
+
+      MOUNT  →  UPDATE  →  UNMOUNT
+      (born)    (changes)   (dies)
+
+#### Phase 1: MOUNTING
+
+    - Component is created and inserted into the DOM for the first time.
+    - On Mounting phase useEffect Runs only once after component is added to DOM.
+
+    ```
+      useEffect(() => {
+        console.log("runs once, like componentDidMount");
+      }, []);
+    ```
+
+#### Phase 2: Updating
+
+- Component re-renders due to state or prop changes.
+- On Updating Phase useEffect runs when a specific value changes.
+
+```
+  useEffect(() => {
+    console.log("runs when count or name changes");
+  }, [count, name]);
+```
+
+#### Phase 3: Unmounting
+
+- Component is removed from the DOM.
+- useEffect cleanup function will be called in this phase
+
+```
+useEffect(() => {
+console.log("runs when count or name changes");
+
+
+return () => {
+      console.log("Cleanup function);  // This cleanup function will be called
+}
+}, []);
+```
+
+# 29. what is Single Page Application?
+
+A Single Page Application is a web app that loads a single HTML document and dynamically updates the DOM using JavaScript instead of requesting new pages from the server on each navigation.
+
+# 30. what is Multi Page Application?
+
+A Multi-Page Application (MPA) is a traditional web architecture where every user interaction—like clicking a link or submitting a form—triggers a full browser refresh to load a completely new HTML page from the server.
+
+# 31. Difference between SPA and MPA?
+
+Aspect: SPA MPA
+Page Loads: One initial load Full reload per page
+Performance: Faster navigation Slower navigation
+SEO: Harder (needs SSR) Naturally good
+Development: Usually one codebase Traditional (multiple pages)
+Initial Load: Slightly high Low
+
+# 32. what is client side routing?
+
+Client-side routing is when the navigation between pages is handled by JavaScript in the browser. Instead of requesting a new page from the server, the JavaScript libraries (like React Router, Vue Router) updates the URL using the History API and renders the appropriate component/view without reloading the page.
+
+# 33. what is Server side routing?
+
+Server-side routing is the traditional method where the browser sends a request to the server for every new URL; the server then generates and sends back a complete HTML page, causing a full browser refresh.
+
+# 34. what is react-router-dom ?
+
+React Router DOM is a popular library for client-side routing in React applications. It allows you to create a Single Page Application (SPA) and navigate between them without full page reloads.
+
+# 35. what is createBrowserRouter and BrowserRouter?
+
+### createBrowserRouter:
+
+A function introduced in React Router v6.4+ that creates a router instance using the History API. It is the recommended way to define routes as it supports data APIs like loaders, actions, and fetchers.
+
+### BrowserRouter:
+
+A component that wraps your app and enables client-side routing using the History API. It does not support React Router v6.4+ data APIs like loaders and actions.
+
+# 36. Difference between Link and NavLink?
+
+### Link
+
+- A component that renders an anchor tag and navigates(move) to a route without a full page reload.
+- Used in for general navigation (e.g., a "Read More" button or a link in a footer).
+
+### Navlink
+
+- Same as Link but applies an active class when its route matches the current URL.
+- Used in Navbar or Dashboard tabs.
+
+# 37. what is an Outlet?
+
+A component used in parent routes that acts as a placeholder where the matched child route's component gets rendered.
+
+#### Syntax
+
+```
+function Dashboard() {
+  return (
+    <div>
+      <h1>Dashboard</h1>
+      <Outlet /> {/* child route renders here */}
+    </div>
+  );
+}
+```
+
+# 38. what is index prop?
+
+A boolean prop on a route that marks it as the default child route, rendered inside the parent's Outlet when no other child route matches.
+
+#### Syntax
+
+```
+const router = createBrowserRouter([
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
+    children: [
+      { index: true, element: <DashboardHome /> }, // renders when path is exactly /dashboard
+      { path: "settings", element: <Settings /> },
+    ],
+  },
+]);
+```
