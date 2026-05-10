@@ -8,6 +8,8 @@ import Home from "./Topic 14 React Routing/Home";
 import Profile from "./Topic 14 React Routing/Profile";
 import Shop from "./Topic 14 React Routing/Shop";
 import Order from "./Topic 14 React Routing/Order";
+import NotFound from "./Topic 14 React Routing/NotFound";
+import ProductPage from "./Topic 14 React Routing/ProductPage";
 // Routing configuration
 const appRouter = createBrowserRouter([
   {

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import Shimmer from "./Shimmer";
-import Card from "../components/Card";
 import { Link } from "react-router-dom";
-
+import Shimmer from "./Shimmer";
+import Card from "./components/Card";
+ 
 const Home = () => {
   const [products, setProducts] = useState([]);
   console.log("Home Render");
