@@ -407,6 +407,7 @@ A Single Page Application is a web app that loads a single HTML document and dyn
 A Multi-Page Application (MPA) is a traditional web architecture where every user interaction—like clicking a link or submitting a form—triggers a full browser refresh to load a completely new HTML page from the server.
 
 # 31. Difference between SPA and MPA?
+
 Aspect: SPA MPA
 Page Loads: One initial load Full reload per page
 Performance: Faster navigation Slower navigation
