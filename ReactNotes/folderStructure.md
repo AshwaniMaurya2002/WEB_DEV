@@ -484,3 +484,143 @@ const router = createBrowserRouter([
   },
 ]);
 ```
+
+# 39 What is useNavigate Hook?
+
+useNavigate is a hook that returns a navigate function used to navigate different route in your app.
+it replace the old useHistroyr hook and allows navigate with the option like replace sstate or delta.
+
+navigate('/dashboard',{replace:true})
+
+# 40 How to create 404 Found page?
+
+A 404 not found pages is an error page when a user tries to access a url route that doesn't exist on your website or application
+
+const router=createBrowserRputer([
+{
+path:"\*",
+element:<Not Found/>
+
+}
+])
+
+# 41 What is Dynamic ROuting?
+
+dyanmic rounnting is a technique where routes are defined with dynamic segements (parameters)
+so that a single route can handle multiple URLs
+
+const router=createBrowserRouter([
+
+{
+path:'/',element:<Home/>
+
+}
+{
+path:"/"
+}
+])
+
+# 42 what is userParam Hook?
+
+useParam is a router hook that lets you access dyanmic value from the URL
+if your routes is/nots/:id then useParam() gives you the id value.
+
+const {id}= useParam();
+
+# 43 what is Navigate component? Difference bwtn navigate vs useNavigate?
+
+Navigate is a react router component used to redirect users to another declarativerly
+when it is renderded
+
+# 44 What is useSearchParams Hooks?
+
+--> useSearchParam is a router hook used to read and update the query {search parameter} in the URL
+it return an array with the current search params object and a function to update
+
+Example:
+
+import{userSearchParams} from 'react-router-dom'
+
+functional Component(){
+const[searchParam,setSearchParam]=useSearchParam();
+
+//REaD
+
+const page=searchParam.get("page")
+const filter=searchParam.get( "filter")
+
+//update:
+const handleFilter =()=>{
+searchParam({filter: 'active',page:1})
+
+}
+
+return <div>...</div>
+
+}
+
+<!--! Star Mark -->
+
+# 46 What is useRouteError Hook??
+
+useRouteError is a react router hook tthat returns the error thrown while rendering loading or navigatING to a route.
+
+it is used only inside an errorElement to display error message to the user.
+
+syntax:
+
+import {useRouteError } from 'react-router-dom'
+
+function Errorpage(){
+const error=useRouteError();
+
+return(
+
+  <div>
+  <h1>OOps! Something went wrong</h1>
+  <p> {error.status} -{error.statusText}</p>
+  <p>{error.data ||  error.message}</p>
+  </div>
+);
+
+}
+
+# 47 What is useLoaderData Hook?
+
+useLoaderData is a react router hook that allows you to access the data retruned by the laoder function of the currrent route.
+
+it is used for data fetching before a components renders (great for SEO and Performace)
+
+syntax::==>
+
+import {useLoaderData} from 'react-router-dom'
+
+function NoteDetails(){
+const note=useLoaderData();
+
+return(
+
+<div>
+<h1> {note.title}</h1>
+<p>{note.body}</p>
+</div>
+);
+}
+
+# 48 what is useOutletContext Hook?
+
+# 54
+
+step 1:-- install cors package
+npm i cors
+
+step 2:-->
+
+import cors from "cors"
+
+app.use(cors({
+origin:"\*",
+credentials:true, //if using cooking.auth
+methods:[GET,POST,PUT,DELETE,OPTIONS]  
+allowedHeaders: [Content-Type,"Authorizations"]
+}))
