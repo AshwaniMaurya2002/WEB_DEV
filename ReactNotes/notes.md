@@ -178,3 +178,10 @@ console.log("cleanUp function"); //this cleanup function will be called
 }
 
 },[])
+
+how redux tooolkit works?
+
+whenever we click on any button it will dispatch an action whuch will call the reducer
+function in the slice and upadte the state in the store.
+
+Once the store is uodated selector gets the state from the store and re render the components
