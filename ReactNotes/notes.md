@@ -1,7 +1,6 @@
 # What is component Composition'
 
 Component Composition is the partice of calling one component inside another component.
-
 1.  Example
 
 function Header(){
