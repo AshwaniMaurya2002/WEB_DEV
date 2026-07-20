@@ -13,5 +13,3 @@ var b=800;
 console.log(b);
 console.log("End");
 console.log(c);
-
-
