@@ -3,9 +3,10 @@
 // import Parent from "./Topic 2 Props/Parent";
 // import Parent from "./Topic 3 Immutable and map function/Parent";
 
+import Parent from "./props/Parent";
 import Counter from "./Topic 4 states/Counter";
 const App = () => {
-  return <Counter />;
+  return <Parent />;
 };
 
 export default App;
