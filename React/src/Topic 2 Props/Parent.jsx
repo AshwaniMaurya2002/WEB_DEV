@@ -1,5 +1,4 @@
 import Card from "./Card";
-
 const Parent=()=>{
 
      const player1={
